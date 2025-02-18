@@ -1,8 +1,12 @@
-﻿using System.Collections;
+﻿using System.Runtime.InteropServices;
+using System.Dynamic;
+using System.Reflection;
+using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using ScrumPacman;
 /**
  *                /|         ,
  *              ,///        /|
@@ -37,7 +41,10 @@ namespace Tests
         [Test]
         public void titansTowerTestScriptSimplePasses()
         {
+            scrumPacman obj = new scrumPacman();
+            Assert.Expect(obj.testflag,EqualTo(true));
             // Use the Assert class to test conditions
+            
         }
 
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
