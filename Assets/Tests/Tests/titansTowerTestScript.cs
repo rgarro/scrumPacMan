@@ -47,6 +47,11 @@ namespace Tests
             
         }
 
+        [Test]
+        public void batComputerHasRestartButtonTest(){
+            
+        }
+
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
         [UnityTest]
