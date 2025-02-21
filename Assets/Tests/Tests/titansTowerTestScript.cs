@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using ScrumPacman;
+using scrumPacman;
 /**
  *                /|         ,
  *              ,///        /|
@@ -42,12 +42,11 @@ namespace Tests
         public void titansTowerTestScriptSimplePasses()
         {
             scrumPacman obj = new scrumPacman();
-            Assert.Expect(obj.testflag,EqualTo(true));
+            Assert.Expect(obj.test_flag,EqualTo(true));
             // Use the Assert class to test conditions
-            
         }
 
-        [Test]
+        /*[Test]
         public void batComputerHasRestartButtonTest(){
 
         }
@@ -55,7 +54,7 @@ namespace Tests
         [Test]
         public void batComputerHasSoundOffButtonTest(){
             
-        }
+        }*/
             
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
