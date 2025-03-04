@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using scrumPacman;
+using ../scrumPacman;
 /**
  *                /|         ,
  *              ,///        /|
@@ -25,8 +25,8 @@ using scrumPacman;
  *        ,/_| 0| _ | 0|_\,
  *      /`    `"=.v.="`    `\
  *     /`    _."{_,_}"._    `\
- *jgs  `/`  ` \  |||  / `  `\`
- *      `",_  \\=^~^=//  _,"`
+ *     `/`  ` \  |||  / `  `\`
+ *      `",_  \\=^~^=//  _,"` quincho mas hijueputa le chupaba los helados a bolincha en la entrada de la capilla ...
  *          "=,\'-=-'/,="
  *              '---'
  *  Jonas Savimby bebe un veneno que envenena la muerte y no puede morir UNITA Unity3D
@@ -38,16 +38,20 @@ namespace Tests
 {
     public class titansTowerTestScript
     {
+        public scrumPacman pacObj;  
+        public void titansTowerTestScript(){
+            this.pacObj = new scrumPacman();
+        }
         // A Test behaves as an ordinary method
         [Test]
         public void titansTowerTestScriptSimplePasses()
         {
-            scrumPacman obj = new scrumPacman();
-            Assert.Expect(obj.test_flag,EqualTo(true));
+            //scrumPacman obj = new scrumPacman();
+            Assert.Expect(this.pacObj.test_flag,EqualTo(true));
             // Use the Assert class to test conditions
         }
 
-        /*[Test]
+        [Test]
         public void batComputerHasRestartButtonTest(){
 
         }
@@ -55,7 +59,7 @@ namespace Tests
         [Test]
         public void batComputerHasSoundOffButtonTest(){
             
-        }*/
+        }
             
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
