@@ -1,6 +1,6 @@
-#scrumPacMan
+# scrumPacMan
 
-Play TicTacToe against Raptor TDD AI
+Play TicTacToe against Raptor TDD AI.
 
 Describe What marcellus wallace looks like ...
 

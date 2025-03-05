@@ -13,8 +13,7 @@ using UnityEngine;
  *               | ':-:' |                |  .-.  |
  *l42            |  '-'  |                |  '-'  |
  *==============='       '================'       |
- *
- * Jonas Savimby bebe un veneno que envenena la muerte y no puede morir UNITA Unity3D
+ * El Rey Boruka de los Altos de Blen fuma mota 
  *
  *@author Rolando <rgarro@gmail.com>
  */
