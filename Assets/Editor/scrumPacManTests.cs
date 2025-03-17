@@ -30,7 +30,7 @@ namespace Tests
             //GameObject tObj = new GameObject();
             //BatComputer b = tObj.addComponent<BatComputer>();//new BatComputer();
             BatComputer b = new BatComputer();
-            Debug.Log(b);
+            Debug.Log(b.is_testable);
             Assert.That(b.is_testable, Is.EqualTo(true));
         }
 
