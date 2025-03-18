@@ -34,6 +34,14 @@ namespace Tests
             Assert.That(b.is_testable, Is.EqualTo(true));
         }
 
+        [Test]
+        public void scrumPacManTestsHasRestarButton()
+        {
+            restartIconButton rb = new restartIconButton();
+            ClassicAssert.IsInstanceOf(restartIconButton, rb);
+            //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
+        }
+
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
         [UnityTest]
