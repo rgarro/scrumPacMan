@@ -50,6 +50,14 @@ namespace Tests
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
         }
 
+        [Test]
+        public void scrumPacManTestsHasDiabloDelTicTacToeController()
+        {
+            diabloDelTicTacToe gameContoller = new diabloDelTicTacToe();
+            ClassicAssert.IsInstanceOf(diabloDelTicTacToe , gameContoller);
+            //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
+        }
+
         // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
         // `yield return null;` to skip a frame.
         [UnityTest]
