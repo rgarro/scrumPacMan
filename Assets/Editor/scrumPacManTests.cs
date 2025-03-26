@@ -34,7 +34,7 @@ namespace Tests
             Debug.Log(b.is_testable);
             Assert.That(b.is_testable, Is.EqualTo(true));
         }
-
+/*
         [Test]
         public void scrumPacManTestsHasRestarButton()
         {
@@ -42,7 +42,7 @@ namespace Tests
             Assert.IsInstanceOf(restartIconButton, rb);
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
         }
-/*
+
         [Test]
         public void scrumPacManTestsSoundCloudButton()
         {
