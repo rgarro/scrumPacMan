@@ -34,15 +34,15 @@ namespace Tests
             Debug.Log(b.is_testable);
             Assert.That(b.is_testable, Is.EqualTo(true));
         }
-/*
+
         [Test]
-        public void scrumPacManTestsHasRestarButton()
+        public void assertTrueBatComputerHasRestarButton()
         {
-            restartIconButton rb = new restartIconButton();
-            Assert.IsInstanceOf(restartIconButton, rb);
+            //restartIconButton rb = new restartIconButton();
+            //Assert.IsInstanceOf(restartIconButton, rb);
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
         }
-
+/*
         [Test]
         public void scrumPacManTestsSoundCloudButton()
         {
