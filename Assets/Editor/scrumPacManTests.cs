@@ -36,11 +36,17 @@ namespace Tests
         }
 
         [Test]
-        public void assertTrueBatComputerHasRestarButton()
+        public void assertTrueBatComputerHasRestartButton()
         {
             //restartIconButton rb = new restartIconButton();
             //Assert.IsInstanceOf(restartIconButton, rb);
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
+        }
+
+        [Test]
+        public void assertTrueBatComputerHasShowStartMenuMethod()
+        {
+            
         }
 /*
         [Test]
