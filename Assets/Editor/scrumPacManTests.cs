@@ -1,9 +1,13 @@
-﻿using System;
+﻿//using System.Reflection.PortableExecutable;
+//using System.Reflection.Assembly;
+using System.Diagnostics;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using Debug = UnityEngine.Debug;
 /**
  *================================================.
  *     .-.   .-.     .--.                         |
@@ -17,6 +21,7 @@ using UnityEngine.TestTools;
  *l42            |  '-'  |                |  '-'  |
  *==============='       '================'       |
  * El Rey Boruka de los Altos de Blen fuma mota 
+ * 
  *
  *@author Rolando <rgarro@gmail.com>
  */
@@ -31,8 +36,20 @@ namespace Tests
             //GameObject tObj = new GameObject();
             //BatComputer b = tObj.addComponent<BatComputer>();//new BatComputer();
             BatComputer b = new BatComputer();
-            Debug.Log(b.is_testable);
+            //Debug.Log(b.is_testable);
             Assert.That(b.is_testable, Is.EqualTo(true));
+        }
+
+        [Test]
+        public void assertTrueBatComputerIsBatComputerType()
+        {
+            BatComputer b = new BatComputer();
+            //Type t = typeof(b);
+Debug.Log("here we go ...");
+//Debug.Log(typeof(b));
+//Debug.Log(b.GetObjecType());
+            //Assert.That(typeof(b), Is.EqualTo(BatComputer));
+            //Assert.IsInstanceOf(BatComputer, b);
         }
 
         [Test]
