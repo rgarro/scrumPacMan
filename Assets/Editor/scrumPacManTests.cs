@@ -20,7 +20,8 @@ using Debug = UnityEngine.Debug;
  *               | ':-:' |                |  .-.  |
  *l42            |  '-'  |                |  '-'  |
  *==============='       '================'       |
- * El Rey Boruka de los Altos de Blen fuma mota 
+ * El Rey Boruka de los Altos de Blen fuma mota .. 
+ * 
  * 
  *
  *@author Rolando <rgarro@gmail.com>
@@ -47,7 +48,7 @@ namespace Tests
             //Type t = typeof(b);
 Debug.Log("here we go ...");
 //Debug.Log(typeof(b));
-//Debug.Log(b.GetObjecType());
+Debug.Log(b.GetObjecType());
             //Assert.That(typeof(b), Is.EqualTo(BatComputer));
             //Assert.IsInstanceOf(BatComputer, b);
         }
