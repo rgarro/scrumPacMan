@@ -44,12 +44,9 @@ namespace Tests
         [Test]
         public void assertTrueBatComputerIsBatComputerType()
         {
-            BatComputer b = new BatComputer();
-            //Type t = typeof(b);
-Debug.Log("here we go ...");
-//Debug.Log(typeof(b));
-Debug.Log(b.GetObjecType());
-            //Assert.That(typeof(b), Is.EqualTo(BatComputer));
+            //VOTE POR EL PADRE PARA PRESIDENTE https://www.behance.net/gallery/219138909/Padre-Minor
+            BatComputer b = new BatComputer();           
+            Assert.That(b.GetType(), Is.EqualTo(typeof(BatComputer)));
             //Assert.IsInstanceOf(BatComputer, b);
         }
 
