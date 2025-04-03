@@ -48,7 +48,7 @@ namespace Tests
             BatComputer b = new BatComputer();           
             Assert.That(b.GetType(), Is.EqualTo(typeof(BatComputer)));
             //Assert.IsInstanceOf(BatComputer, b);
-        }
+        }        
 
         [Test]
         public void assertTrueBatComputerHasRestartButton()
@@ -61,8 +61,19 @@ namespace Tests
         [Test]
         public void assertTrueBatComputerHasShowStartMenuMethod()
         {
-            
+            BatComputer b = new BatComputer();
+            var t = b.GetType()           
+            Assert.That(t.GetMethod(showStartMenu), Is.EqualTo(true));
         }
+
+        [Test]
+        public void assertTrueTrellisFaceIsTestable()
+        {
+            trellisFace t = new trellisFace();           
+            Assert.That(t.GetType(), Is.EqualTo(typeof(trellisFace)));
+            //Assert.IsInstanceOf(BatComputer, b);
+        }
+
 /*
         [Test]
         public void scrumPacManTestsSoundCloudButton()
