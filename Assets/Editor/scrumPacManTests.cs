@@ -62,8 +62,8 @@ namespace Tests
         public void assertTrueBatComputerHasShowStartMenuMethod()
         {
             BatComputer b = new BatComputer();
-            var t = b.GetType()           
-            Assert.That(t.GetMethod(showStartMenu), Is.EqualTo(true));
+            var t = b.GetType();           
+            Assert.That(t.GetMethod('showStartMenu'), Is.EqualTo(true));
         }
 
         [Test]

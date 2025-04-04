@@ -28,6 +28,10 @@ public class BatComputer : MonoBehaviour
         
     }
 
+    void showStartMenu(){
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
