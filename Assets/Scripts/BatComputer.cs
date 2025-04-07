@@ -23,8 +23,8 @@ using UnityEngine;
 public class BatComputer : MonoBehaviour
 {
     public bool is_testable = true;
-    private bool im_player = false;
-    private bool im_home = false;
+    public bool im_player = false;
+    public bool im_home = false;
     // Start is called before the first frame update
     void Start()
     {

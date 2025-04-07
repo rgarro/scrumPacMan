@@ -19,6 +19,9 @@ using UnityEngine;
 public class borukaPlayer : MonoBehaviour
 {
     public bool is_testable = true;
+    public int turn_number = 0;
+    public bool is_ex = false;
+    public bool is_cirle = false;
     // Start is called before the first frame update
     void Start()
     {

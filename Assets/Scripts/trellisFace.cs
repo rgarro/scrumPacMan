@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /**
@@ -19,6 +20,12 @@ using UnityEngine;
  */
 public class trellisFace : MonoBehaviour
 {
+ 
+    public bool is_player = false;
+    public bool is_diablo = false;
+    public bool is_exFace = false;
+    public bool is_circleFace = false;
+    
     // Start is called before the first frame update
     void Start()
     {

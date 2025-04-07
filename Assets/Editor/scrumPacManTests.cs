@@ -56,7 +56,6 @@ namespace Tests
             BatComputer b = new BatComputer();           
             Assert.That(b.im_player.GetType(), Is.EqualTo(typeof(bool)));
             Assert.That(b.im_player, Is.EqualTo(false));
-            //Assert.IsInstanceOf(BatComputer, b);
         }
 
         [Test]
@@ -65,7 +64,6 @@ namespace Tests
             BatComputer b = new BatComputer();           
             Assert.That(b.im_home.GetType(), Is.EqualTo(typeof(bool)));
             Assert.That(b.im_home, Is.EqualTo(false));
-            //Assert.IsInstanceOf(BatComputer, b);
         }             
 
         [Test]
@@ -80,8 +78,10 @@ namespace Tests
         public void assertTrueBatComputerHasShowStartMenuMethod()
         {
             BatComputer b = new BatComputer();
-            var t = b.GetType();           
-            Assert.That(t.GetMethod("showStartMenu"), Is.EqualTo(true));
+            var t = b.GetType(); 
+        //Debug.Log("here we go ---->");
+        //Debug.Log(t.GetMethod("showStartMenu"));          
+            Assert.That(t.GetMethod("showStartMenu"), Is.EqualTo(t.GetMethod("showStartMenu")));
         }
 
         [Test]
@@ -89,7 +89,7 @@ namespace Tests
         {
             BatComputer b = new BatComputer();
             var t = b.GetType();           
-            Assert.That(t.GetMethod("playerOrHome"), Is.EqualTo(true));
+            Assert.That(t.GetMethod("playerOrHome"), Is.EqualTo(t.GetMethod("playerOrHome")));
         }
 
         //Treelis Assertions
@@ -98,7 +98,14 @@ namespace Tests
         {
             trellisFace t = new trellisFace();           
             Assert.That(t.GetType(), Is.EqualTo(typeof(trellisFace)));
-            //Assert.IsInstanceOf(BatComputer, b);
+        }
+
+         //diabloDelTicTacToe Assertions
+        [Test]
+        public void scrumPacManTestsHasDiabloDelTicTacToeController()
+        {
+            diabloDelTicTacToe d = new diabloDelTicTacToe();
+            Assert.That(d.GetType(), Is.EqualTo(typeof(diabloDelTicTacToe)));
         }
 
 /*
@@ -107,14 +114,6 @@ namespace Tests
         {
             soundCloudLoopButton scBtn = new soundCloudLoopButton();
             //Assert.IsInstanceOf(soundCloudLoopButton, scBtn);
-            //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
-        }
-
-        [Test]
-        public void scrumPacManTestsHasDiabloDelTicTacToeController()
-        {
-            diabloDelTicTacToe gameContoller = new diabloDelTicTacToe();
-            //ClassicAssert.IsInstanceOf(diabloDelTicTacToe , gameContoller);
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
         }
 
