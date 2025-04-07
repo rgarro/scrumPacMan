@@ -30,6 +30,7 @@ namespace Tests
 {
     public class scrumPacManTests
     {
+        //BatComputer Assertions
         // A Test behaves as an ordinary method
         [Test]
         public void scrumPacManTestsSimplePasses()
@@ -44,11 +45,28 @@ namespace Tests
         [Test]
         public void assertTrueBatComputerIsBatComputerType()
         {
-            //VOTE POR EL PADRE PARA PRESIDENTE https://www.behance.net/gallery/219138909/Padre-Minor
             BatComputer b = new BatComputer();           
             Assert.That(b.GetType(), Is.EqualTo(typeof(BatComputer)));
             //Assert.IsInstanceOf(BatComputer, b);
-        }        
+        }
+
+        [Test]
+        public void assertTrueBatComputerHasImPlayerProperty()
+        {
+            BatComputer b = new BatComputer();           
+            Assert.That(b.im_player.GetType(), Is.EqualTo(typeof(bool)));
+            Assert.That(b.im_player, Is.EqualTo(false));
+            //Assert.IsInstanceOf(BatComputer, b);
+        }
+
+        [Test]
+        public void assertTrueBatComputerHasImHomeProperty()
+        {
+            BatComputer b = new BatComputer();           
+            Assert.That(b.im_home.GetType(), Is.EqualTo(typeof(bool)));
+            Assert.That(b.im_home, Is.EqualTo(false));
+            //Assert.IsInstanceOf(BatComputer, b);
+        }             
 
         [Test]
         public void assertTrueBatComputerHasRestartButton()
@@ -66,6 +84,15 @@ namespace Tests
             Assert.That(t.GetMethod("showStartMenu"), Is.EqualTo(true));
         }
 
+        [Test]
+        public void assertTrueBatComputerHasDecidePlayerOrHomeMethod()
+        {
+            BatComputer b = new BatComputer();
+            var t = b.GetType();           
+            Assert.That(t.GetMethod("playerOrHome"), Is.EqualTo(true));
+        }
+
+        //Treelis Assertions
         [Test]
         public void assertTrueTrellisFaceIsTestable()
         {
