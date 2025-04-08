@@ -92,7 +92,7 @@ namespace Tests
             Assert.That(t.GetMethod("playerOrHome"), Is.EqualTo(t.GetMethod("playerOrHome")));
         }
 
-        //Treelis Assertions
+        //Trellis Assertions
         [Test]
         public void assertTrueTrellisFaceIsTestable()
         {
@@ -106,6 +106,14 @@ namespace Tests
         {
             diabloDelTicTacToe d = new diabloDelTicTacToe();
             Assert.That(d.GetType(), Is.EqualTo(typeof(diabloDelTicTacToe)));
+        }
+
+        //borukaPlayer Assertions
+        [Test]
+        public void assertTrueBorukaPlayerExist()
+        {
+            borukaPlayer p = new borukaPlayer();
+            Assert.That(p.GetType(), Is.EqualTo(typeof(borukaPlayer)));
         }
 
 /*
