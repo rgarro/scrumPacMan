@@ -25,6 +25,7 @@ public class trellisFace : MonoBehaviour
     public bool is_diablo = false;
     public bool is_exFace = false;
     public bool is_circleFace = false;
+     public String faceName = "B1";
     
     // Start is called before the first frame update
     void Start()

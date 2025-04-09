@@ -116,6 +116,30 @@ namespace Tests
             Assert.That(p.GetType(), Is.EqualTo(typeof(borukaPlayer)));
         }
 
+        [Test]
+        public void assertBorukaPlayerIsExBoolProperty()
+        {
+            borukaPlayer p = new borukaPlayer();           
+            Assert.That(p.is_ex.GetType(), Is.EqualTo(typeof(bool)));
+            Assert.That(p.is_ex, Is.EqualTo(false));
+        }
+
+        [Test]
+        public void assertBorukaPlayerIsCircleBoolProperty()
+        {
+            borukaPlayer p = new borukaPlayer();           
+            Assert.That(p.is_circle.GetType(), Is.EqualTo(typeof(bool)));
+            Assert.That(p.is_circle, Is.EqualTo(false));
+        }
+
+        [Test]
+        public void assertBorukaPlayerTurnNumberIntProperty()
+        {
+            borukaPlayer p = new borukaPlayer();           
+            Assert.That(p.turn_number.GetType(), Is.EqualTo(typeof(int)));
+            Assert.That(p.turn_number, Is.EqualTo(0));
+        }               
+
 /*
         [Test]
         public void scrumPacManTestsSoundCloudButton()
