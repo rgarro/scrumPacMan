@@ -22,6 +22,10 @@ using UnityEngine;
  */
 public class diabloDelTicTacToe : MonoBehaviour
 {
+    public int turn_number = 0;
+    public bool is_ex = false;
+    public bool is_cirle = false;
+    
     // Start is called before the first frame update
     void Start()
     {

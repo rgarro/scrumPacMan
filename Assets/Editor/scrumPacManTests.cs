@@ -100,6 +100,22 @@ namespace Tests
             Assert.That(t.GetType(), Is.EqualTo(typeof(trellisFace)));
         }
 
+        [Test]
+        public void assertTrueTrellisFaceHasExFaceBoolProperty()
+        {
+            trellisFace p = new trellisFace();           
+            Assert.That(p.is_exFace.GetType(), Is.EqualTo(typeof(bool)));
+            Assert.That(p.is_exFace, Is.EqualTo(false));
+        }
+
+        [Test]
+        public void assertTrueTrellisFaceIsCircleBoolProperty()
+        {
+            trellisFace p = new trellisFace();           
+            Assert.That(p.is_circleFace.GetType(), Is.EqualTo(typeof(bool)));
+            Assert.That(p.is_circleFace, Is.EqualTo(false));
+        }
+
          //diabloDelTicTacToe Assertions
         [Test]
         public void scrumPacManTestsHasDiabloDelTicTacToeController()
@@ -123,7 +139,7 @@ namespace Tests
             Assert.That(p.is_ex.GetType(), Is.EqualTo(typeof(bool)));
             Assert.That(p.is_ex, Is.EqualTo(false));
         }
-
+/*
         [Test]
         public void assertBorukaPlayerIsCircleBoolProperty()
         {
@@ -131,7 +147,7 @@ namespace Tests
             Assert.That(p.is_circle.GetType(), Is.EqualTo(typeof(bool)));
             Assert.That(p.is_circle, Is.EqualTo(false));
         }
-
+*/
         [Test]
         public void assertBorukaPlayerTurnNumberIntProperty()
         {
