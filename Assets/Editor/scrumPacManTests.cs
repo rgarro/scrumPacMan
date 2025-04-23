@@ -156,15 +156,18 @@ namespace Tests
             Assert.That(p.turn_number, Is.EqualTo(0));
         }               
 
-/*
+
         [Test]
         public void scrumPacManTestsSoundCloudButton()
         {
-            soundCloudLoopButton scBtn = new soundCloudLoopButton();
+            GameObject bat = GameObject.FindWithTag("BatComputer");
+            soundCloudLoopButton tmpObj = bat.GetComponent(typeof(soundCloudLoopButton)) as soundCloudLoopButton;
+            Assert.That(tmpObj.IconX, Is.GreaterThan(0));
+            //soundCloudLoopButton scBtn = new soundCloudLoopButton();
             //Assert.IsInstanceOf(soundCloudLoopButton, scBtn);
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
         }
-
+*/
         [Test]
         public void diabloDelTicTacToeControllerHasPlayerOneGameObject()
         {
