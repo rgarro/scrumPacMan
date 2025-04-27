@@ -167,7 +167,7 @@ namespace Tests
             //Assert.IsInstanceOf(soundCloudLoopButton, scBtn);
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
         }
-*/
+/*
         [Test]
         public void diabloDelTicTacToeControllerHasPlayerOneGameObject()
         {
