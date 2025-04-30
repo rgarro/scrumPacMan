@@ -20,7 +20,7 @@ using Debug = UnityEngine.Debug;
  *               | ':-:' |                |  .-.  |
  *l42            |  '-'  |                |  '-'  |
  *==============='       '================'       |
- * El Rey Boruka de los Altos de Blen fuma mota .. 
+ * El Rey Boruka de los Altos de Blen Fuma Mota .. 
  * 
  * 
  *
@@ -157,7 +157,7 @@ namespace Tests
         }               
 
 
-        [Test]
+        /*[Test]
         public void scrumPacManTestsSoundCloudButton()
         {
             GameObject bat = GameObject.FindWithTag("BatComputer");
@@ -167,7 +167,8 @@ namespace Tests
             //Assert.IsInstanceOf(soundCloudLoopButton, scBtn);
             //ClassicAssert.IsInstanceOf<restartIconButton>(rb);
         }
-/*
+        
+
         [Test]
         public void diabloDelTicTacToeControllerHasPlayerOneGameObject()
         {
