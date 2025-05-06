@@ -1791,7 +1791,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Concentrate Energy into \nenergon cubes"
+  m_Text: 'The machine will decide who begins
+
+    If you already find and X is your
+    turn otherwise click on the trellis and place your X
+
+    CLICK BUTTON TO START'
 --- !u!222 &1836071811
 CanvasRenderer:
   m_ObjectHideFlags: 0
