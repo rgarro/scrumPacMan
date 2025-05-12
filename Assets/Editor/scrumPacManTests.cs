@@ -124,7 +124,7 @@ namespace Tests
             Assert.That(d.GetType(), Is.EqualTo(typeof(diabloDelTicTacToe)));
         }
 
-        //borukaPlayer Assertions
+        //BorukaPlayer Assertions
         [Test]
         public void assertTrueBorukaPlayerExist()
         {
