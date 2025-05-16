@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System.Runtime.CompilerServices;
+using System.Globalization;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,20 +11,43 @@ public class startBtn : MonoBehaviour
 
     
     public bool playerStart = false;
+    public bool computerStart = false;
+
     void Start()
     {
         Debug.Log("start button got clicked");
-        if(this.whoStarts()){
+        this.whoStarts();
+        if(this.playerStart){
+            
+        }
+        if(this.computerStart){
             
         }
     }
 
-    void gameStarter(){
+    void gameStarterComputer(){
 
     }
 
-    bool whoStarts(){
-        return false;
+    void gameStarterPlayer(){
+
+    }
+
+    void whoStarts(){
+        int randomValue = Random.Range(1,10);
+        //heating random seed generator
+        randomValue = Random.Range(1,10);
+        randomValue = Random.Range(1,10);
+        randomValue = Random.Range(1,10);
+        randomValue = Random.Range(1,10);
+        if(randomValue>5){
+            this.playerStart = true;
+            this.computerStart = false;
+        }
+        if(randomValue<5){
+            this.computerStart = true;
+            this.playerStart = false;
+        }
     }
 
 
