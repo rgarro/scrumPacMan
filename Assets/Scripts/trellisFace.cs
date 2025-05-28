@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using System.Diagnostics;
+using System.Diagnostics.Debug;
 using System.Runtime.CompilerServices;
 using System.Globalization;
 using System;
@@ -36,7 +37,7 @@ public class trellisFace : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.uptadeLastUsed();
+        this.updateLastUsed();
     }
 
     void clickedFacedHandler(){
@@ -45,7 +46,7 @@ public class trellisFace : MonoBehaviour
         }
     }
 
-    void uptadeLastUsed(){
+    void updateLastUsed(){
         this.last_used = Time.time;
     }
 
