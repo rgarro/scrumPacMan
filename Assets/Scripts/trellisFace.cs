@@ -1,4 +1,7 @@
-﻿using System.Globalization;
+﻿using System.Threading;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using System.Globalization;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -37,7 +40,9 @@ public class trellisFace : MonoBehaviour
     }
 
     void clickedFacedHandler(){
-        
+        if (Input.GetMouseButtonDown(1)){
+            Debug.Log("Face: "+ this.faceName + " got clicked --");
+        }
     }
 
     void uptadeLastUsed(){
@@ -47,6 +52,6 @@ public class trellisFace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.clickedFacedHandler();
     }
 }
