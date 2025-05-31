@@ -34,7 +34,7 @@ public class startBtn : MonoBehaviour
     }
 
     void whoStarts(){
-        /*int randomValue = Random.Range(1,10);
+        int randomValue = Random.Range(1,10);
         //heating random seed generator
         randomValue = Random.Range(1,10);
         randomValue = Random.Range(1,10);
@@ -47,7 +47,7 @@ public class startBtn : MonoBehaviour
         if(randomValue<5){
             this.computerStart = true;
             this.playerStart = false;
-        }*/
+        }
     }
 
 
