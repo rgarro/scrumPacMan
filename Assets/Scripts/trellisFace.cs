@@ -11,13 +11,13 @@ using UnityEngine;
  * ||          || | |
  * ||       . _o| | | __
  * |`-----------' |/ /~/
- *  ~~~~~~~~~~~~~~~ / /   en costarica muchos veian tele en tele robado a sus amigos ....
- *                 ~~
- * The Revolution wont be Televised.
- * VOTE POR EL PADRE PARA PRESIDENTE https://www.behance.net/gallery/219138909/Padre-Minor
+ *  ~~~~~~~~~~~~~~~ / /   en CostaRica muchos veian tele en tele robado a sus amigos ....
+ *                 ~~     los de Merayo de 1983 dijo el fantasma de 
+ *                        los que fueron a ojo de agua en mayo de 1982 prostituian vecinas
+ *                        Voces de la OUIJA , Voces de la OUIJA .....
+ *                        las del baile del comunal agosto 1984 desculiaron la empleada de un vecino, el exnovio celebro
  *
- * El Sandinismo es vivir en el exodo 13-15 , american airlines ticket to land of the amorites ...
- * 
+ *
  *
  *@author Rolando <rgarro@gmail.com>
  */
