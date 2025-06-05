@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BatComputer
   - startButton
+  - powerAdelogo
   layers:
   - Default
   - TransparentFX
