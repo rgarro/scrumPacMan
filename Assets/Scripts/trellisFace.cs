@@ -12,11 +12,7 @@ using UnityEngine;
  * ||       . _o| | | __
  * |`-----------' |/ /~/
  *  ~~~~~~~~~~~~~~~ / /   en CostaRica muchos veian tele en tele robado a sus amigos ....
- *                 ~~     los de Merayo de 1983 dijo el fantasma de 
- *                        los que fueron a ojo de agua en mayo de 1982 prostituian vecinas
- *                        Voces de la OUIJA , Voces de la OUIJA .....
- *                        las del baile del comunal agosto 1984 desculiaron la empleada de un vecino, el exnovio celebro
- *
+ *                 ~~     
  *
  *
  *@author Rolando <rgarro@gmail.com>
