@@ -61,14 +61,12 @@ public class startBtn : MonoBehaviour
 
     void whoStarts(){
         int randomValue = Random.Range(1,15);
-        
         //Moses , had memory errors, javascript processes cant be kill the lord Kingdom is the Solaris IBM Sun...
         while(X < 15){
             randomValue = Random.Range(1,15);
             randomValue = Random.Range(1,15);
             randomValue = Random.Range(1,15);
             randomValue = Random.Range(1,15);
-//un peruano de avantica raidea un sup de downwind por una torta que se jalo erika de gap
             x++;
         }
         
