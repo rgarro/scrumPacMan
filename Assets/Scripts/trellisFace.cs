@@ -14,14 +14,7 @@ using UnityEngine;
  * ||       . _o| | | __
  * |`-----------' |/ /~/
  *  ~~~~~~~~~~~~~~~ / /   en CostaRica muchos veian tele en tele robado a sus amigos ....
- *                 ~~     cuando gato tenga 18 meses de incinerado en la morgue del siquiatrico yo dejo de fumar mota
- *                        garro no le pago ni le pagara a bolincha
- *                        bolincha huele a kk
- *                         si aparece el muerto de gato yo vuelvo a fumar mota
- *                       bolincha espia el padron de votantes y juega de base de datos con vecinos
- *                       a un maje de moravia ya lo mataron por jugar asi
- *                         policias centroamericanos mataron a ladrones de tilaran en la interamericana
- *      
+ *                 ~~    
  *                         
  *
  *

@@ -44,10 +44,10 @@ public class startBtn : MonoBehaviour
         Debug.Log("start button got clicked");
         this.whoStarts();
         if(this.playerStart){
-            
+            Debug.Log("player starts");
         }
         if(this.computerStart){
-            
+            Debug.Log("computer starts");
         }
     }
 
