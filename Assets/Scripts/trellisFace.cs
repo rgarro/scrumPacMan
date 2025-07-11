@@ -15,14 +15,7 @@ using UnityEngine;
  * |`-----------' |/ /~/
  *  ~~~~~~~~~~~~~~~ / /   en CostaRica muchos veian tele en tele robado a sus amigos ....
  *                 ~~   mas miedo que un Bar de periqueros cerca de Ojo de Agua en 1978 ...
- *                  Dinastias sandinistas con islas de amor en el lago tipitapa .....
- *        Scuds Hondurenos impulsados por gases de hielo seco volcanico, con facha de F15 llevan mercaderias parachuteadas a Chechenia
- *                    Concubinas del Sha1 con casa de playa en Azerbayan, boris yeltzin culea
- *            Putin se ha sercenado el pene y lo regenerara el dia de la Muerte de Zelenski
- *                    Hay mota de mejico en el paso de la vaca, boletas a 500 en las pulperias de SanJose
- *            Eran Putas del Hotel Del Rey las corresponsales de la CNN .....
- *             Putin compro las putas de Vips y las escondio en siberia para que los comandos Ramzan no las visitaran
- *                    Yo Soy un Agente de la DIS, Un aprendis de Miguel Salguero !!
+ *                 
  *  
  *
  *
