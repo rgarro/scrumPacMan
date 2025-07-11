@@ -30,7 +30,7 @@ public class BatComputer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("quincho huele a HIV, bolinche es gay hediondo ...");
+        Debug.Log("STARTING ...");
     }
 
     void showStartMenu(){
