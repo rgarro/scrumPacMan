@@ -47,13 +47,13 @@ public class startBtn : MonoBehaviour
 
     public void clickHandler(){
          Debug.Log("start button got clicked");
-        /*this.whoStarts();
+        this.whoStarts();
         if(this.playerStart){
             Debug.Log("player starts");
         }
         if(this.computerStart){
             Debug.Log("computer starts");
-        }*/
+        }
     }
 
     public void gameStarterComputer(){
