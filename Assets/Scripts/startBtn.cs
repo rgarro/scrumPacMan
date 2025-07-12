@@ -37,12 +37,12 @@ public class startBtn : MonoBehaviour
     // Start is called before the first frame update
     public bool playerStart = false;
     public bool computerStart = false;
-    public Button start_btn;
+    //public Button start_btn;
 
     void Start()
     {
         Debug.Log("starting click handler");
-        this.start_btn.AddListener(clickHandler);
+        //this.start_btn.AddListener(clickHandler);
     }
 
     public void clickHandler(){
@@ -56,11 +56,11 @@ public class startBtn : MonoBehaviour
         }*/
     }
 
-    void gameStarterComputer(){
+    public void gameStarterComputer(){
 
     }
 
-    void gameStarterPlayer(){
+    public void gameStarterPlayer(){
 
     }
 
