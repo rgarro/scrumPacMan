@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Threading;
+using System.Runtime.CompilerServices;
 using System.Globalization;
 using System;
 using System.Collections;
@@ -36,10 +37,12 @@ public class startBtn : MonoBehaviour
     // Start is called before the first frame update
     public bool playerStart = false;
     public bool computerStart = false;
+    public Button start_btn;
 
     void Start()
     {
         Debug.Log("starting click handler");
+        this.start_btn.AddListener(clickHandler);
     }
 
     public void clickHandler(){
