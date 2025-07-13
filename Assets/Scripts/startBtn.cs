@@ -66,16 +66,16 @@ public class startBtn : MonoBehaviour
 
     void whoStarts(){
         int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
-        Debug.Log("Random: "+randomValue);
+        Debug.Log("starting Random: "+randomValue);
         //Moses , had memory errors, javascript processes cant be kill the lord Kingdom is the Solaris IBM Sun...
-        /*while(X < 15){
-            randomValue = Random.Range(1,15);
-            randomValue = Random.Range(1,15);
-            randomValue = Random.Range(1,15);
-            randomValue = Random.Range(1,15);
+        while(int x < 15){
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
             x++;
         }
-        
+        Debug.Log("Random: "+randomValue);
         if(randomValue>5){
             this.playerStart = true;
             this.computerStart = false;
@@ -83,7 +83,7 @@ public class startBtn : MonoBehaviour
         if(randomValue<5){
             this.computerStart = true;
             this.playerStart = false;
-        }*/
+        }
     }
 
 
