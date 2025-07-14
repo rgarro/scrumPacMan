@@ -8,6 +8,7 @@ TagManager:
   - startButton
   - powerAdelogo
   - centerCanTag
+  - startMenuTag
   layers:
   - Default
   - TransparentFX

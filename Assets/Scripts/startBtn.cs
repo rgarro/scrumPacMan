@@ -50,12 +50,18 @@ public class startBtn : MonoBehaviour
         this.whoStarts();
         if(this.playerStart){
             Debug.Log("player starts");
+            this.hideStartScreen();
             //GameObject targetObj = GameObject.Find("diablodeltictactoe").GetComponent<ScriptName>().pasePorDelante();
         }
         if(this.computerStart){
             Debug.Log("computer starts");
+            this.hideStartScreen();
             //GameObject targetObj = GameObject.Find("diablodeltictactoe").GetComponent<ScriptName>().elDiabloPrimero()();
         }
+    }
+
+    void hideStartScreen(){
+        GameObject.FindWithTag("startMenuTag").SetActive(false);
     }
 
     public void gameStarterComputer(){
