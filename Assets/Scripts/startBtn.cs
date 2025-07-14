@@ -70,7 +70,8 @@ public class startBtn : MonoBehaviour
         int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
         Debug.Log("starting Random: "+randomValue);
         //Moses , had memory errors, javascript processes cant be kill the lord Kingdom is the Solaris IBM Sun...
-        while(int x < 15){
+        int x = 0;
+        while(x < 15){
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
