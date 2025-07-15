@@ -9,6 +9,7 @@ TagManager:
   - powerAdelogo
   - centerCanTag
   - startMenuTag
+  - teletranClone
   layers:
   - Default
   - TransparentFX

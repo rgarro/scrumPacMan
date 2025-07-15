@@ -15,7 +15,9 @@ using UnityEngine;
  *                __/  /          _\  )
  *              .<___.'         .<___/
  * F_ONE Diablo snow kitting the plains of Jericho
- *
+ * UNCLE Sam , please approve my EB-1
+ * Roger, Alpha , Delta airlines
+ *  SJO -> Dallas -> here = new Mexico(Caballo Lake)
  *
  *
  *@author Rolando <rgarro@gmail.com>
@@ -31,11 +33,11 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void elDiabloPrimero(){
-        Debug.Log("el diablo primero");//ni garro ni garrincha le pagan a bolincha ni le dan pension
+        Debug.Log("el diablo primero");
     }
 
     public void pasePorDelante(){
-        Debug.Log("pase por delante");//le sacan a bolincha hoja de delincuencia en alajuela el jueves
+        Debug.Log("pase por delante");
     }
 
     void evilsTurn(){}
