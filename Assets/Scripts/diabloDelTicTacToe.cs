@@ -31,11 +31,11 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void elDiabloPrimero(){
-        Debug.Log("el diablo primero");
+        Debug.Log("el diablo primero");//ni garro ni garrincha le pagan a bolincha ni le dan pension
     }
 
     public void pasePorDelante(){
-        Debug.Log("pase por delante");
+        Debug.Log("pase por delante");//le sacan a bolincha hoja de delincuencia en alajuela el jueves
     }
 
     void evilsTurn(){}
