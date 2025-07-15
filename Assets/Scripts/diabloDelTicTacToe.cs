@@ -14,7 +14,7 @@ using UnityEngine;
  *                   /  /         \  \          ~- . _ _~_-_.
  *                __/  /          _\  )
  *              .<___.'         .<___/
- * F_ONE Diablo snow kitting the plains of Jericho
+ * F-ONE Diablo snow kitting the plains of Jericho
  * UNCLE Sam , please approve my EB-1
  * Roger, Alpha , Delta airlines
  *  SJO -> Dallas -> here = new Mexico(Caballo Lake)
