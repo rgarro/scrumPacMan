@@ -15,7 +15,7 @@ using UnityEngine;
  * |`-----------' |/ /~/
  *  ~~~~~~~~~~~~~~~ / /   en CostaRica muchos veian tele en tele robado a sus amigos ....
  *                 ~~   mas miedo que un Bar de periqueros cerca de Ojo de Agua en 1978 ...
- *                 Mas miedo que un MQ-1 Predator volando sobre los iphones de la Ultra de saprissa
+ *                
  *  
  *
  *
