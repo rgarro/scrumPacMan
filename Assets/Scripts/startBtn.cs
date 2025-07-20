@@ -37,11 +37,13 @@ public class startBtn : MonoBehaviour
     // Start is called before the first frame update
     public bool playerStart = false;
     public bool computerStart = false;
+    private diabloDelTicTacToe diablo;
     //public Button start_btn;
 
     void Start()
     {
-        Debug.Log("starting click handler");
+        Debug.Log("starting start click handler");
+        this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         //this.start_btn.AddListener(clickHandler);
     }
 
@@ -51,12 +53,12 @@ public class startBtn : MonoBehaviour
         if(this.playerStart){
             Debug.Log("player starts");
             this.hideStartScreen();
-            //GameObject targetObj = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>().pasePorDelante();
+            this.diablo.pasePorDelante();
         }
         if(this.computerStart){
             Debug.Log("computer starts");
             this.hideStartScreen();
-            //GameObject targetObj = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>().elDiabloPrimero();
+            this.diablo.elDiabloPrimero();
         }
         //return null;
     }
