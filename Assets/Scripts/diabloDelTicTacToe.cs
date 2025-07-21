@@ -29,11 +29,11 @@ public class diabloDelTicTacToe : MonoBehaviour
 {
     public int turn_number = 0;
 
-    private []string carasDeDiablo = {'A1','A2','A3','B1','B2','B3','C1','C2','C3'};
-    private []string sonrisasDelDiablo = {};
-    private []string elQueYaPaso = {};
-    private []string jachasDisponibles = {};
-    private []string theFourCorners = {'A1','A3','C1','C3'};
+    private string[] carasDeDiablo = {"A1","A2","A3","B1","B2","B3","C1","C2","C3"};
+    private string[] sonrisasDelDiablo = {};
+    private string[] elQueYaPaso = {};
+    private string[] jachasDisponibles = {};
+    private string[] theFourCorners = {"A1","A3","C1","C3"};
     
     // Start is called before the first frame update
     void Start()
@@ -50,6 +50,9 @@ public class diabloDelTicTacToe : MonoBehaviour
     private string elDiabloJuegaPrimeraEsquina(){
         string computerChoice = null;
         int choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
+        choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
+        choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
+        choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
         return this.theFourCorners[choosen_corner_key];
     }
 
@@ -58,10 +61,11 @@ public class diabloDelTicTacToe : MonoBehaviour
     public void pasePorDelante(){
         Debug.Log("pase por delante");
         Debug.Log("esperando click en los espacios del trellis");
-        this.playerTurnTimer()
+        this.playerTurnTimer();
     }
 
     private void playerTurnTimer(){
+         Debug.Log("starting timer ..");
         //player turn timeOut here ...
     }
 
