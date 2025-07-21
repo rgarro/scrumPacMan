@@ -44,16 +44,25 @@ public class diabloDelTicTacToe : MonoBehaviour
     public void elDiabloPrimero(){
         Debug.Log("el diablo primero");
         string corner_label = this.elDiabloJuegaPrimeraEsquina();
+        Debug.Log("evil corner: "+corner_label);
     }
 
     private string elDiabloJuegaPrimeraEsquina(){
-
+        string computerChoice = null;
+        int choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
+        return this.theFourCorners[choosen_corner_key];
     }
 
     private void escogerJachaDisponible(){}
 
     public void pasePorDelante(){
         Debug.Log("pase por delante");
+        Debug.Log("esperando click en los espacios del trellis");
+        this.playerTurnTimer()
+    }
+
+    private void playerTurnTimer(){
+        //player turn timeOut here ...
     }
 
     void evilsTurn(){}
