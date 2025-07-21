@@ -6,24 +6,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /**
- *                                 /(        )`
- *                                 \ \___   / |
- *                                 /- _  `-/  '
- *                                (/\/ \ \   /\
- *                                / /   | `    \
- *                                O O   ) /    |
- *                                `-^--'`<     '
- *                    TM         (_.)  _  )   /
- * |  | |\  | ~|~ \ /             `.___/`    /
- * |  | | \ |  |   X                `-----' /
- * `__| |  \| _|_ / \  <----.     __ / __   \
- *                     <----|====O)))==) \) /====
- *                     <----'    `--' `.__,' \
- *                                  |        |
- *                                   \       /
- *                              ______( (_  / \______
- *                            ,'  ,-----'   |        \
- *                            `--{__________)        \/
+ *                       _. - ~ ~ ~ - .
+ *   ..       __.    .-~               ~-.
+ *   ((\     /   `}.~                     `.
+ *    \\\   {     }               /     \   \
+ *(\   \\~~^      }              |       }   \
+ * \`.-~ -@~      }  ,-.         |       )    \
+ * (___     ) _}   (    :        |    / /      `.
+ *  `----._-~.     _\ \ |_       \   / /- _      `.
+ *         ~~----~~  \ \| ~~--~~~(  + /     ~-.     ~- _
+ *                   /  /         \  \          ~- . _ _~_-_.
+ *                __/  /          _\  )
+ *              .<___.'         .<___/
  * EXODUS {26:5} Fifty loops shalt thou make in the one curtain, 
  * and fifty loops shalt thou make in the edge of the curtain that is in the coupling of the second; 
  * that the loops may take hold one of another
