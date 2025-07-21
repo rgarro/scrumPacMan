@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Globalization;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,9 +30,10 @@ public class diabloDelTicTacToe : MonoBehaviour
     public int turn_number = 0;
 
     private []string carasDeDiablo = {'A1','A2','A3','B1','B2','B3','C1','C2','C3'};
-    private []string sonrisasDelDiablo = {};//bolincha va a jugar este juego dijo el diablo
+    private []string sonrisasDelDiablo = {};
     private []string elQueYaPaso = {};
     private []string jachasDisponibles = {};
+    private []string theFourCorners = {'A1','A3','C1','C3'};
     
     // Start is called before the first frame update
     void Start()
@@ -40,10 +42,13 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void elDiabloPrimero(){
-        Debug.Log("el diablo primero");//ponga a bermudez a ahcer cienciologia para ir a leon 13 a comprar medio kilo de mota
+        Debug.Log("el diablo primero");
+        string corner_label = this.elDiabloJuegaPrimeraEsquina();
     }
 
-    private void elDiabloJuegaEsquina(){}//soplele la flauta a bolincha hasta que se ponga a pasar a alguien, luego termine el methodo
+    private string elDiabloJuegaPrimeraEsquina(){
+
+    }
 
     private void escogerJachaDisponible(){}
 
