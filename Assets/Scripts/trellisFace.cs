@@ -13,8 +13,8 @@ using UnityEngine;
  * ||          || | |
  * ||       . _o| | | __
  * |`-----------' |/ /~/
- *  ~~~~~~~~~~~~~~~ / /   en CostaRica muchos veian tele en tele robado a sus amigos ....
- *                 ~~   mas miedo que un Bar de periqueros cerca de Ojo de Agua en 1978 ...
+ *  ~~~~~~~~~~~~~~~ / /   visiones del banco negro y la avenida segunda del dia del carnaval de los 70s ....
+ *                 ~~   
  *                
  *  
  *

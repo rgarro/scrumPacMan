@@ -69,9 +69,11 @@ public class diabloDelTicTacToe : MonoBehaviour
     private string elDiabloJuegaPrimeraEsquina(){
         string computerChoice = null;
         int choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
-        //beetlejuce beetlejuice beetlejuice ..
+        //beetlejuce ..
         choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
+        //beetlejuce ..
         choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
+        //beetlejuce  ..
         choosen_corner_key = (int)Mathf.Abs(UnityEngine.Random.Range(0.0f,3.0f));
         return this.theFourCorners[choosen_corner_key];
     }
