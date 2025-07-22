@@ -47,8 +47,9 @@ public class trellisFace : MonoBehaviour
         }
     }
 
-    void setDiablo(){
+    public void setDiablo(){
         //set by the Diablo
+        Debug.Log("Face: "+ this.faceName + " got clicked --");
         this.is_diablo = true;
         this.is_player = false;
     }
