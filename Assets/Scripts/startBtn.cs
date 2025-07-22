@@ -36,13 +36,13 @@ public class startBtn : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("starting start click handler");
+        //Debug.Log("starting start click handler");
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         //this.start_btn.AddListener(clickHandler);
     }
 
     public void clickHandler(){
-         Debug.Log("start button got clicked");
+         //Debug.Log("start button got clicked");
         this.whoStarts();
         if(this.playerStart){
             Debug.Log("player starts");
@@ -70,23 +70,23 @@ public class startBtn : MonoBehaviour
     }
 
     void whoStarts(){
-        int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
+        int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
         //Debug.Log("starting Random: "+randomValue);
         //Moses , had memory errors, javascript processes cant be kill the lord Kingdom is the Solaris IBM Sun...
         int x = 0;
         while(x < 15){
-            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
-            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
-            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
-            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,15.0f));
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
+            randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
             x++;
         }
-        Debug.Log("Random: "+randomValue);
+        //Debug.Log("Random: "+randomValue);
         if(randomValue>5){
             this.playerStart = true;
             this.computerStart = false;
         }
-        if(randomValue<5){
+        if(randomValue<6){
             this.computerStart = true;
             this.playerStart = false;
         }
