@@ -2242,7 +2242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RestartIcon: {fileID: 2800000, guid: 20ce5cd531b044ac387cd276866173cb, type: 3}
-  IconX: 418
+  IconX: 420
   IconY: 10
   IconWidth: 85
   IconHeight: 85
