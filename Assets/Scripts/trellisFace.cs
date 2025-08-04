@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Diagnostics;
+using System.Threading;
 //using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Globalization;
@@ -30,12 +31,14 @@ public class trellisFace : MonoBehaviour
     public bool is_circleFace = false;
     public string faceName = "B1";
     private float last_used = 0.0f;
+    private diabloDelTicTacToe diablo;
 
     public string circleFaceName = "A1CircleFace"; 
     public string exFaceName = "A1XFace"; 
     // Start is called before the first frame update
     void Start()
     {
+         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.updateLastUsed();
     }
 
@@ -44,6 +47,9 @@ public class trellisFace : MonoBehaviour
             //Debug.Log("Face: "+ this.faceName + " got clicked --");
             this.is_player = true;
             this.is_diablo = false;
+            this.updateLastUsed();
+            this.diablo.resetPlayerTimer();
+            this.diablo.turnoDelDiablo();
         }
     }
 
@@ -52,6 +58,8 @@ public class trellisFace : MonoBehaviour
         Debug.Log("Face: "+ this.faceName + " got clicked --");
         this.is_diablo = true;
         this.is_player = false;
+        this.updateLastUsed();
+        this.diablo.turnoDelPlayer();
     }
 
     void setFaceSprite(){

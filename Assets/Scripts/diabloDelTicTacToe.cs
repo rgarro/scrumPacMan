@@ -88,8 +88,23 @@ public class diabloDelTicTacToe : MonoBehaviour
         this.playerTurnTimer();
     }
 
+    public void turnoDelPlayer(){
+Debug.Log("turno del jugador");
+this.playerTurnTimer();
+    }
+
     private void playerTurnTimer(){
          Debug.Log("starting timer ..");
+        //player turn timeOut here ...
+    }
+
+    public void resetPlayerTimer(){
+         Debug.Log("stoping and reseting timer ..");
+        //player turn timeOut here ...
+    }
+
+     public void turnoDelDiablo(){
+         Debug.Log("turno del diablo ..");
         //player turn timeOut here ...
     }
 
