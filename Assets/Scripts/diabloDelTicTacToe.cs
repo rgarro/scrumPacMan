@@ -49,6 +49,8 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     private bool is_x = false;
     private bool is_o = false;
+
+     public float playerMaxTimeToPlay = 60f;//El dia de la muerte de ozzy...
     
     // Start is called before the first frame update
     void Start()
