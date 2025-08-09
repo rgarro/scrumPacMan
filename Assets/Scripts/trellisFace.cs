@@ -32,6 +32,8 @@ public class trellisFace : MonoBehaviour
     public string faceName = "B1";
     private float last_used = 0.0f;
     private diabloDelTicTacToe diablo;
+    private bool is_x = false;
+    private bool is_o = false;
 
     public string circleFaceName = "A1CircleFace"; 
     public string exFaceName = "A1XFace"; 
@@ -53,8 +55,13 @@ public class trellisFace : MonoBehaviour
         }
     }
 
-    public void showX(){}
-    public void showX(){}
+    public void showX(){
+
+    }
+    
+    public void showO(){
+
+    }
 
     public void setDiablo(){
         //set by the Diablo
