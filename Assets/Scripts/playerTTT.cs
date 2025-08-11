@@ -1,7 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+ * ---------------+---------------
+ *           ___ /^^[___              _
+ *          /|^+----+   |#___________//
+ *        ( -+ |____|    ______-----+/
+ *         ==_________--'            \
+ *           ~_|___|__
+ * Yeah-yeah, some folks inherit : star-spangled eyes
+ * 0.00f, they send you down to war, Lord()
+ * And when you ask em, How much should we give?
+ * 0.00f, they only answer, More, more, more, more
+ *
+ *
+ *
+ *@author Rolando <rgarro@gmail.com>
+ */
 public class playerTTT : MonoBehaviour
 {
     // Start is called before the first frame update
