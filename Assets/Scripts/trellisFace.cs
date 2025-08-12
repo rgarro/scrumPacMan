@@ -35,12 +35,15 @@ public class trellisFace : MonoBehaviour
     private bool is_x = false;
     private bool is_o = false;
 
+    //private playerTTT player;
+
     public string circleFaceName = "A1CircleFace"; 
     public string exFaceName = "A1XFace"; 
     // Start is called before the first frame update
     void Start()
     {
-         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
+        this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
+        //this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
         this.updateLastUsed();
     }
 

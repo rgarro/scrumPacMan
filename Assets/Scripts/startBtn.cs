@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Diagnostics;
+using System.Threading;
 using System.Runtime.CompilerServices;
 using System.Globalization;
 using System;
@@ -32,12 +33,14 @@ public class startBtn : MonoBehaviour
     public bool playerStart = false;
     public bool computerStart = false;
     private diabloDelTicTacToe diablo;
+    private playerTTT player;
     //public Button start_btn;
 
     void Start()
     {
         //Debug.Log("starting start click handler");
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
+        this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
         //this.start_btn.AddListener(clickHandler);
     }
 
@@ -47,10 +50,18 @@ public class startBtn : MonoBehaviour
         if(this.playerStart){
             Debug.Log("player starts");
             this.hideStartScreen();
+            this.diablo.is_x = true;
+            this.diablo.is_o = false;
+            this.player.is_x = false;
+            this.player.is_o = true;
             this.diablo.pasePorDelante();
         }
         if(this.computerStart){
             Debug.Log("computer starts");
+            this.diablo.is_x = false;
+            this.diablo.is_o = true;
+            this.player.is_x = true;
+            this.player.is_o = false;
             this.hideStartScreen();
             this.diablo.elDiabloPrimero();
         }

@@ -47,8 +47,8 @@ public class diabloDelTicTacToe : MonoBehaviour
     private string[] jachasDisponibles = {};
     private string[] theFourCorners = {"A1","A3","C1","C3"};
 
-    private bool is_x = false;
-    private bool is_o = false;
+    public bool is_x = false;
+    public bool is_o = false;
 
      public float playerMaxTimeToPlay = 60f;//El dia de la muerte de ozzy...
     
