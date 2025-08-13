@@ -14,7 +14,7 @@ using UnityEngine;
  * ||          || | |
  * ||       . _o| | | __
  * |`-----------' |/ /~/
- *  ~~~~~~~~~~~~~~~ / /   visiones del banco negro y la avenida segunda del dia del carnaval de los 70s ....
+ *  ~~~~~~~~~~~~~~~ / /   mas miedo que un bar de periqueros en playas del coco en 1979 ....
  *                 ~~   
  *                
  *  
@@ -30,6 +30,8 @@ public class trellisFace : MonoBehaviour
     public bool is_exFace = false;
     public bool is_circleFace = false;
     public string faceName = "B1";
+    public string FaceXTag = "XB1";
+    public string FaceOTag = "OB1";
     private float last_used = 0.0f;
     private diabloDelTicTacToe diablo;
     private bool is_x = false;
@@ -59,11 +61,11 @@ public class trellisFace : MonoBehaviour
     }
 
     public void showX(){
-
+        GameObject.FindWithTag(this.FaceXTag).SetActive(false);
     }
     
     public void showO(){
-
+        GameObject.FindWithTag(this.FaceOTag).SetActive(false);
     }
 
     public void setDiablo(){
