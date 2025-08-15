@@ -2277,6 +2277,7 @@ GameObject:
   - component: {fileID: 1637928140}
   - component: {fileID: 1637928141}
   - component: {fileID: 1637928142}
+  - component: {fileID: 1637928143}
   m_Layer: 0
   m_Name: BatComputer
   m_TagString: teletranClone
@@ -2326,6 +2327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turn_number: 0
+  is_x: 0
+  is_o: 0
   playerMaxTimeToPlay: 60
 --- !u!114 &1637928140
 MonoBehaviour:
@@ -2462,6 +2465,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1637928143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637928136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e91a5ced2bf498c9731d2df976885d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  is_x: 0
+  is_o: 0
 --- !u!1 &1638993318
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,6 +2928,8 @@ MonoBehaviour:
   is_exFace: 0
   is_circleFace: 0
   faceName: A1
+  FaceXTag: XB1
+  FaceOTag: OB1
   circleFaceName: A1CircleFace
   exFaceName: A1XFace
 --- !u!1 &1945382521

@@ -34,6 +34,7 @@ public class trellisFace : MonoBehaviour
     public string FaceOTag = "OB1";
     private float last_used = 0.0f;
     private diabloDelTicTacToe diablo;
+    private playerTTT player;
     private bool is_x = false;
     private bool is_o = false;
 
@@ -45,7 +46,7 @@ public class trellisFace : MonoBehaviour
     void Start()
     {
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
-        //this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
+        this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
         this.updateLastUsed();
     }
 
