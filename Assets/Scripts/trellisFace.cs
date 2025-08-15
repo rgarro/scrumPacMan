@@ -61,6 +61,19 @@ public class trellisFace : MonoBehaviour
         }
     }
 
+    void OnMouseDown()
+        {
+            Debug.Log("Object clicked!");
+            // Add your desired actions here
+            /*
+             this.is_player = true;
+            this.is_diablo = false;
+            this.updateLastUsed();
+            this.diablo.resetPlayerTimer();
+            this.diablo.turnoDelDiablo();
+            */
+        }
+
     public void showX(){
         GameObject.FindWithTag(this.FaceXTag).SetActive(false);
     }

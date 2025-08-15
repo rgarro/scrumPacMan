@@ -10,6 +10,33 @@ TagManager:
   - centerCanTag
   - startMenuTag
   - teletranClone
+  - A1
+  - XA1
+  - OA1
+  - B1
+  - XB1
+  - OB1
+  - C1
+  - XC1
+  - OC1
+  - A2
+  - XA2
+  - OA2
+  - B2
+  - XB2
+  - OB2
+  - C2
+  - XC2
+  - OC2
+  - A3
+  - XA3
+  - OA3
+  - B3
+  - XB3
+  - OB3
+  - C3
+  - XC3
+  - OC3
   layers:
   - Default
   - TransparentFX
