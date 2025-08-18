@@ -22,11 +22,18 @@ public class playerTTT : MonoBehaviour
 
     public bool is_x = false;
     public bool is_o = false;
+    private string[] clickedFaces = {};
+    private string[] clickedXFaces = {};
+     private string[] clickedOFaces = {};
     
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    public void pushFace(string faceTag){
+        this.clickedFaces.Push(faceTag);
     }
 
     // Update is called once per frame

@@ -67,8 +67,14 @@ public class trellisFace : MonoBehaviour
             Debug.Log("Face: "+ this.faceName + " got clicked --");
             Debug.Log("Player is x: "+ this.player.is_x);
             Debug.Log("Player is o: "+ this.player.is_o);
+            this.player.pushFace(this.faceName);
             if(this.player.is_x){
                 Debug.Log("FaceX: "+ this.FaceXTag);
+                //this.showX();
+            }
+             if(this.player.is_o){
+                Debug.Log("FaceO: "+ this.FaceOTag);
+                //this.showO();
             }
             // Add your desired actions here
             /*
