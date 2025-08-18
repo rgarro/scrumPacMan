@@ -53,8 +53,8 @@ public class trellisFace : MonoBehaviour
     void clickedFacedHandler(){
         if (Input.GetMouseButtonDown(1)){
             //Debug.Log("Face: "+ this.faceName + " got clicked --");
-            this.is_player = true;
-            this.is_diablo = false;
+            //this.is_player = true;
+            //this.is_diablo = false;
             this.updateLastUsed();
             this.diablo.resetPlayerTimer();
             this.diablo.turnoDelDiablo();
@@ -85,8 +85,8 @@ public class trellisFace : MonoBehaviour
     public void setDiablo(){
         //set by the Diablo
         Debug.Log("Face: "+ this.faceName + " got clicked --");
-        this.is_diablo = true;
-        this.is_player = false;
+        //this.is_diablo = true;
+        //this.is_player = false;
         this.updateLastUsed();
         this.diablo.turnoDelPlayer();
     }
