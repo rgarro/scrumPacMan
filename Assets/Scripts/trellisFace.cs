@@ -64,6 +64,12 @@ public class trellisFace : MonoBehaviour
     void OnMouseDown()
         {
             Debug.Log("Object clicked!");
+            Debug.Log("Face: "+ this.faceName + " got clicked --");
+            Debug.Log("Player is x: "+ this.player.is_x);
+            Debug.Log("Player is o: "+ this.player.is_o);
+            if(this.player.is_x){
+                Debug.Log("FaceX: "+ this.FaceXTag);
+            }
             // Add your desired actions here
             /*
              this.is_player = true;
