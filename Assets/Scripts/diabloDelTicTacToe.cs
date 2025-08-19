@@ -58,14 +58,20 @@ public class diabloDelTicTacToe : MonoBehaviour
         
     }
 
+    public void diabloRie(string faceTag){
+        //Diablo, Diablo, regaleme media libra de jamaiquina y le hago el cessna pasa cargado por chiriqui
+        this.sonrisasDelDiablo.Push(faceTag);
+    }
+
     public void elDiabloPrimero(){
-        Debug.Log("el diablo primero");
+        Debug.Log("el diablo primero");//las putas del diablo no bailan con otros $$$ <=
         string corner_label = this.elDiabloJuegaPrimeraEsquina();
         Debug.Log("evil corner: "+corner_label);
         //this.is_x = true;
         //this.is_o = false;
         this.trFace = GameObject.FindWithTag(corner_label).GetComponent<trellisFace>();
         this.trFace.setDiablo();
+        this.diabloRie(corner_label);//la lancha del Diablo llego de cartagena
     }
 
     private string elDiabloJuegaPrimeraEsquina(){
