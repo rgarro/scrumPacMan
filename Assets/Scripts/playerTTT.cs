@@ -24,11 +24,11 @@ public class playerTTT : MonoBehaviour
     public bool is_x = false;
     public bool is_o = false;
     //private string[] clickedFaces = {};
-    private List<string> clickedFaces = {};
+    private List<string> clickedFaces = new List<string>();
     //private string[] clickedXFaces = {};
-    private List<string> clickedXFaces = {};
+    private List<string> clickedXFaces = new List<string>();
     //private string[] clickedOFaces = {};
-    private List<string> clickedOFaces = {};
+    private List<string> clickedOFaces = new List<string>();
     
     // Start is called before the first frame update
     void Start()

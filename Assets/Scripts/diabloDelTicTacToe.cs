@@ -41,11 +41,11 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     private trellisFace trFace;
 
-    private string[] carasDeDiablo = {"A1","A2","A3","B1","B2","B3","C1","C2","C3"};
-    private string[] sonrisasDelDiablo = {};
-    private string[] elQueYaPaso = {};
-    private string[] jachasDisponibles = {};
-    private string[] theFourCorners = {"A1","A3","C1","C3"};
+    private List<string> carasDeDiablo = {"A1","A2","A3","B1","B2","B3","C1","C2","C3"};
+    private List<string> sonrisasDelDiablo = {};
+    private List<string> elQueYaPaso = {};
+    private List<string> jachasDisponibles = {};
+    private List<string> theFourCorners = {"A1","A3","C1","C3"};
 
     public bool is_x = false;
     public bool is_o = false;
