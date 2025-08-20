@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System.Globalization;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /**
@@ -22,9 +23,12 @@ public class playerTTT : MonoBehaviour
 
     public bool is_x = false;
     public bool is_o = false;
-    private string[] clickedFaces = {};
-    private string[] clickedXFaces = {};
-     private string[] clickedOFaces = {};
+    //private string[] clickedFaces = {};
+    private List<string> clickedFaces = {};
+    //private string[] clickedXFaces = {};
+    private List<string> clickedXFaces = {};
+    //private string[] clickedOFaces = {};
+    private List<string> clickedOFaces = {};
     
     // Start is called before the first frame update
     void Start()
