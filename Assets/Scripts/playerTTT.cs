@@ -37,7 +37,8 @@ public class playerTTT : MonoBehaviour
     }
 
     public void pushFace(string faceTag){
-        this.clickedFaces.Push(faceTag);
+        //this.clickedFaces.Push(faceTag);
+        this.clickedFaces.Add(faceTag);
     }
 
     // Update is called once per frame

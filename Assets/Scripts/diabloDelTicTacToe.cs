@@ -41,11 +41,11 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     private trellisFace trFace;
 
-    private List<string> carasDeDiablo = {"A1","A2","A3","B1","B2","B3","C1","C2","C3"};
-    private List<string> sonrisasDelDiablo = {};
-    private List<string> elQueYaPaso = {};
-    private List<string> jachasDisponibles = {};
-    private List<string> theFourCorners = {"A1","A3","C1","C3"};
+    private List<string> carasDeDiablo = new List<string>(){"A1","A2","A3","B1","B2","B3","C1","C2","C3"};
+    private List<string> sonrisasDelDiablo = new List<string>(){};
+    private List<string> elQueYaPaso = new List<string>(){};
+    private List<string> jachasDisponibles = new List<string>(){};
+    private List<string> theFourCorners = new List<string>(){"A1","A3","C1","C3"};
 
     public bool is_x = false;
     public bool is_o = false;
@@ -59,8 +59,8 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void diabloRie(string faceTag){
-        //Diablo, Diablo, regaleme media libra de jamaiquina y le hago el cessna pasa cargado por chiriqui
-        this.sonrisasDelDiablo.Push(faceTag);
+        //this.sonrisasDelDiablo.Push(faceTag);
+        this.sonrisasDelDiablo.Add(faceTag);
     }
 
     public void elDiabloPrimero(){
