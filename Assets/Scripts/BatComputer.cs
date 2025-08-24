@@ -28,7 +28,8 @@ public class BatComputer : MonoBehaviour
     public bool im_player = false;
     public bool im_home = false;
     private diabloDelTicTacToe diablo;//OZZY MURIO MIENTRAS ESCRIBIA ESTE JUEGO ...
-    // Start is called before the first frame update
+
+
     void Start()
     {
         Debug.Log("STARTING ...");
