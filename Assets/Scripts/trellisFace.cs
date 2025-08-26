@@ -52,7 +52,7 @@ public class trellisFace : MonoBehaviour
 
     void clickedFacedHandler(){
         if (Input.GetMouseButtonDown(1)){
-            //Debug.Log("Face: "+ this.faceName + " got clicked --");
+            Debug.Log("Face: "+ this.faceName + " got clicked --");
             //this.is_player = true;
             //this.is_diablo = false;
             this.updateLastUsed();
