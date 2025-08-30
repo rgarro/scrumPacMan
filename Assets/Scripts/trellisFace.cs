@@ -1,4 +1,5 @@
-﻿//using System.Diagnostics;
+﻿using System.Diagnostics;
+//using System.Diagnostics;
 using System.Threading;
 //using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -97,8 +98,12 @@ public class trellisFace : MonoBehaviour
     public void setDiablo(){
         //set by the Diablo
         Debug.Log("Face: "+ this.faceName + " got clicked --");
-        //this.is_diablo = true;
-        //this.is_player = false;
+        if(this.is_diablo){
+            this.showX();
+        }
+        if(this.is_player){
+            this.showX();
+        }
         this.updateLastUsed();
         this.diablo.turnoDelPlayer();
     }
