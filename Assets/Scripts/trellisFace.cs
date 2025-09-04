@@ -1,7 +1,5 @@
-﻿using System.Diagnostics;
-//using System.Diagnostics;
+﻿//using System.Diagnostics;
 using System.Threading;
-//using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Globalization;
 using System;
@@ -71,11 +69,11 @@ public class trellisFace : MonoBehaviour
             this.player.pushFace(this.faceName);
             if(this.player.is_x){
                 Debug.Log("FaceX: "+ this.FaceXTag);
-                //this.showX();
+                this.showX();
             }
              if(this.player.is_o){
                 Debug.Log("FaceO: "+ this.FaceOTag);
-                //this.showO();
+                this.showO();
             }
             // Add your desired actions here
             /*
