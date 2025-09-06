@@ -30,7 +30,7 @@ using UnityEngine;
  * UNCLE Sam , please approve my EB-1
  * Roger, Alpha , Delta airlines
  *  SJO -> Dallas -> here = new Mexico(Caballo Lake)
- *
+ * 
  *
  *
  *@author Rolando <rgarro@gmail.com>
@@ -121,6 +121,19 @@ this.playerTurnTimer();
     // Update is called once per frame
     void Update()
     {
-        
+        /*
+        if (countdownTime > 0)
+        {
+            countdownTime -= Time.deltaTime;
+            int minutes = Mathf.FloorToInt(countdownTime / 60);
+            int seconds = Mathf.FloorToInt(countdownTime % 60);
+            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
+        else
+        {
+            countdownTime = 0;
+            timerText.text = "00:00";
+            // Trigger an action when time is up (e.g., game over)
+        }*/
     }
 }

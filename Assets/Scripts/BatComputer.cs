@@ -34,7 +34,6 @@ public class BatComputer : MonoBehaviour
     void Start()
     {
         //Debug.Log("STARTING ...");
-        //los Avventa NO pagaron Liquidaciones y les Mataron la oficina de ukrania y les asesinaron los representantes 
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
     }
