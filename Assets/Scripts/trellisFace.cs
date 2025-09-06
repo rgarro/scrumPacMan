@@ -14,8 +14,8 @@ using UnityEngine;
  * ||       . _o| | | __
  * |`-----------' |/ /~/
  *  ~~~~~~~~~~~~~~~ / /   mas miedo que un bar de periqueros en playas del coco en 1979 ....
- *                 ~~   
- *                
+ *                 ~~  mas miedo que una turba de Hondurenos bajando por la interamericana 
+ *          Vietnamitas de Cocibolca cangrejo negro de las cuevas de calle blancos      
  *  
  *
  *

@@ -28,11 +28,15 @@ public class BatComputer : MonoBehaviour
     public bool im_player = false;
     public bool im_home = false;
     private diabloDelTicTacToe diablo;//OZZY MURIO MIENTRAS ESCRIBIA ESTE JUEGO ...
+    private playerTTT player;//el condor era un violador que atacaba en cuesta de moras ...
 
 
     void Start()
     {
-        Debug.Log("STARTING ...");
+        //Debug.Log("STARTING ...");
+        //los Avventa NO pagaron Liquidaciones y les Mataron la oficina de ukrania y les asesinaron los representantes 
+        this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
+        this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
     }
 
     void showStartMenu(){
