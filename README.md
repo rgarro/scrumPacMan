@@ -9,8 +9,6 @@ Did you like it? send me funds,help me to pay my MIT major  ... [Paypal](https:/
 
 Bohemia-Girl Music Loop: https://soundcloud.com/dorje-trolo/bohemia-girl
 
-2D  Xs and Os , WebGL and Android version.
-
 [![herbie nichols the third world.... ](https://raw.githubusercontent.com/rgarro/scrumPacMan/main/preview.png)
 
 

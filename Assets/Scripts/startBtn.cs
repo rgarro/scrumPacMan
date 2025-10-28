@@ -25,7 +25,7 @@ using UnityEngine;
  *  THE LORD WANTED US TO MAKE A NESTED LOOP ...
  *
  *
- *@author Rolando <rgarro@gmail.com>
+ *@author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class startBtn : MonoBehaviour
 {
