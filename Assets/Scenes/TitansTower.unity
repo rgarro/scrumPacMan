@@ -1421,8 +1421,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972038378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 4.66, z: 0}
-  m_LocalScale: {x: 1.355209, y: 1.7627623, z: 0.8850954}
+  m_LocalPosition: {x: -1.47, y: 4.56, z: 0}
+  m_LocalScale: {x: 1.0925965, y: 1.4211742, z: 0.7135816}
   m_Children: []
   m_Father: {fileID: 2040563942}
   m_RootOrder: 0
@@ -3066,6 +3066,7 @@ GameObject:
   - component: {fileID: 1637928141}
   - component: {fileID: 1637928142}
   - component: {fileID: 1637928143}
+  - component: {fileID: 1637928144}
   m_Layer: 0
   m_Name: BatComputer
   m_TagString: teletranClone
@@ -3131,10 +3132,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RestartIcon: {fileID: 2800000, guid: 20ce5cd531b044ac387cd276866173cb, type: 3}
-  IconX: 420
+  IconX: 400
   IconY: 10
-  IconWidth: 80
-  IconHeight: 80
+  IconWidth: 60
+  IconHeight: 60
   windowX: 20
   windowY: 20
   windowWidth: 300
@@ -3153,10 +3154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundCloudIcon: {fileID: 2800000, guid: fce39a142c3f2493baab944c94c2b0fc, type: 3}
   audioData: {fileID: 1637928142}
-  IconX: 520
+  IconX: 470
   IconY: 10
-  IconWidth: 80
-  IconHeight: 80
+  IconWidth: 60
+  IconHeight: 60
 --- !u!82 &1637928142
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3267,6 +3268,92 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   is_x: 0
   is_o: 0
+--- !u!114 &1637928144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637928136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c13ab398de324a969901e07ec84dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowX: 1053
+  windowY: 14
+  windowHeight: 170
+  windowWidth: 150
+  style:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 1, g: 0.85527277, b: 0.033018887, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: e5916162fc80040ccaf7f682e93e38f1, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  flashMsg: I aint afraid of no ghost..
+  flashSoundClip: {fileID: 0}
+  playSoundOnUpdate: 1
 --- !u!1 &1643834497
 GameObject:
   m_ObjectHideFlags: 0

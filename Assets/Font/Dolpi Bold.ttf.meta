@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: ca1da95fa3f094e6fb0bfdc096ca9d4e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dolpi
+  fontNames:
+  - Dolpi
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e5916162fc80040ccaf7f682e93e38f1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

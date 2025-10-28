@@ -34,6 +34,7 @@ public class startBtn : MonoBehaviour
     public bool computerStart = false;
     private diabloDelTicTacToe diablo;
     private playerTTT player;
+    private updatableText updateText;
     //public Button start_btn;
 
     void Start()
@@ -41,6 +42,7 @@ public class startBtn : MonoBehaviour
         //Debug.Log("starting start click handler");
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
+        this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<updatableText>();
         //this.start_btn.AddListener(clickHandler);
     }
 
@@ -49,6 +51,7 @@ public class startBtn : MonoBehaviour
         this.whoStarts();
         if(this.playerStart){
             Debug.Log("player starts");
+            this.updateText.setFlashMsg("player starts");
             this.hideStartScreen();
             this.diablo.is_x = true;
             this.diablo.is_o = false;
@@ -58,6 +61,7 @@ public class startBtn : MonoBehaviour
         }
         if(this.computerStart){
             Debug.Log("computer starts");
+            this.updateText.setFlashMsg("computer starts");
             this.diablo.is_x = false;
             this.diablo.is_o = true;
             this.player.is_x = true;
@@ -82,7 +86,7 @@ public class startBtn : MonoBehaviour
 
     void whoStarts(){
         int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
-        Debug.Log("starting Random: "+randomValue);
+        //Debug.Log("starting Random: "+randomValue);
         int x = 0;
         while(x < 15){
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
