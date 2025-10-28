@@ -3277,11 +3277,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1637928136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c13ab398de324a969901e07ec84dbc3, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b2d0f9a5006b4e1b96ba81354fe2143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowX: 1053
-  windowY: 14
+  windowX: 1054
+  windowY: 40
   windowHeight: 170
   windowWidth: 150
   style:
@@ -3289,7 +3289,7 @@ MonoBehaviour:
     m_Normal:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
-      m_TextColor: {r: 1, g: 0.85527277, b: 0.033018887, a: 1}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_ScaledBackgrounds: []
@@ -3339,7 +3339,7 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: e5916162fc80040ccaf7f682e93e38f1, type: 3}
-    m_FontSize: 30
+    m_FontSize: 35
     m_FontStyle: 1
     m_Alignment: 0
     m_WordWrap: 0
@@ -3352,7 +3352,7 @@ MonoBehaviour:
     m_StretchWidth: 1
     m_StretchHeight: 0
   flashMsg: I aint afraid of no ghost..
-  flashSoundClip: {fileID: 0}
+  flashSoundClip: {fileID: 8300000, guid: 2abeb6a7a900c4920b78a229e7b0e92f, type: 3}
   playSoundOnUpdate: 1
 --- !u!1 &1643834497
 GameObject:

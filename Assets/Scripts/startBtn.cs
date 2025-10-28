@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using emptyLibUnity.UI;
 /**
  *                       _. - ~ ~ ~ - .
  *   ..       __.    .-~               ~-.
@@ -34,7 +35,7 @@ public class startBtn : MonoBehaviour
     public bool computerStart = false;
     private diabloDelTicTacToe diablo;
     private playerTTT player;
-    private updatableText updateText;
+    private flasyText updateText;
     //public Button start_btn;
 
     void Start()
@@ -42,7 +43,7 @@ public class startBtn : MonoBehaviour
         //Debug.Log("starting start click handler");
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
-        this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<updatableText>();
+        this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
         //this.start_btn.AddListener(clickHandler);
     }
 
