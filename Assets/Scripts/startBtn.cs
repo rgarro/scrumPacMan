@@ -51,8 +51,8 @@ public class startBtn : MonoBehaviour
          //Debug.Log("start button got clicked");
         this.whoStarts();
         if(this.playerStart){
-            Debug.Log("player starts");
-            this.updateText.setFlashMsg("player starts");
+            //Debug.Log("player starts");
+            this.updateText.setFlashMsg("Player Starts");
             this.hideStartScreen();
             this.diablo.is_x = true;
             this.diablo.is_o = false;
@@ -61,8 +61,8 @@ public class startBtn : MonoBehaviour
             this.diablo.pasePorDelante();
         }
         if(this.computerStart){
-            Debug.Log("computer starts");
-            this.updateText.setFlashMsg("computer starts");
+            //Debug.Log("computer starts");
+            this.updateText.setFlashMsg("Computer Starts");
             this.diablo.is_x = false;
             this.diablo.is_o = true;
             this.player.is_x = true;

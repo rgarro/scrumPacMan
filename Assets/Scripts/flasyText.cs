@@ -43,25 +43,15 @@ using UnityEngine;
 
     public bool playSoundOnUpdate = true;
     public float soundVolume = 0.7F;
+    public float beforeNextMsgWait = 2.2F;
     
     void Start()
     {
         this.servoSoundPlayer = GetComponent<AudioSource>();
-        /*private GameObject scoreUpdater;
-        public string scoreManagerTag = "BatComputer";
-        this.scoreUpdater = GameObject.FindWithTag(this.scoreManagerTag);
-        scoreDisplay tmpObj = this.scoreUpdater.GetComponent(typeof(scoreDisplay)) as scoreDisplay;
-            tmpObj.addScore(this.ptsToIncrease);*/
-        
     }
 
     private void playServoSoundOn(){
         this.servoSoundPlayer.PlayOneShot(this.flashSoundClip, this.soundVolume);
-        /*this.servoSoundPlayer.clip = this.flashSoundClip;
-        this.servoSoundPlayer.loop = false;
-        if (!this.servoSoundPlayer.isPlaying) {
-            this.servoSoundPlayer.Play ();
-        }*/
     }
 
     void OnGUI(){
@@ -70,12 +60,13 @@ using UnityEngine;
 	}
 
     public void setFlashMsg(string msg){
-        Debug.Log("msg.." + msg);
+        //Debug.Log("msg.." + msg);
         this.flashMsg = msg;
         if(this.playSoundOnUpdate){
             this.playServoSoundOn();
             //this.servoSoundPlayer.Stop ();
         }
+        //yield return new WaitForSeconds (this.beforeNextMsgWait);
 	}
 
     // Update is called once per frame

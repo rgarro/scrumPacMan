@@ -25,15 +25,15 @@ using UnityEngine;
  *                            ,'  ,-----'   |        \
  *                            `--{__________)        \/
  *
- *
- * F-ONE Diablo snow kitting the plains of Jericho
+ * this.IS the AI of a tictactoe 2d  Game
+ * call the F-ONE Diablo snow kitting the plains of Jericho
  * UNCLE Sam , please approve my EB-1
  * Roger, Alpha , Delta airlines
  *  SJO -> Dallas -> here = new Mexico(Caballo Lake)
  * 
  *
  *
- *@author Rolando <rgarro@gmail.com>
+ *@author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class diabloDelTicTacToe : MonoBehaviour
 {
@@ -51,11 +51,12 @@ public class diabloDelTicTacToe : MonoBehaviour
     public bool is_o = false;
 
      public float playerMaxTimeToPlay = 60f;//El dia de la muerte de ozzy...
+     private flasyText updateText;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
     }
 
     public void diabloRie(string faceTag){
@@ -64,9 +65,10 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void elDiabloPrimero(){
-        Debug.Log("el diablo primero");
+        //Debug.Log("el diablo primero");
         string corner_label = this.elDiabloJuegaPrimeraEsquina();
-        Debug.Log("evil corner: "+corner_label);
+        //Debug.Log("evil corner: "+corner_label);
+        this.updateText.setFlashMsg("Computer Plays Corner "+corner_label);
         //this.is_x = true;
         //this.is_o = false;
         this.trFace = GameObject.FindWithTag(corner_label).GetComponent<trellisFace>();
@@ -89,8 +91,9 @@ public class diabloDelTicTacToe : MonoBehaviour
     private void escogerJachaDisponible(){}
 
     public void pasePorDelante(){
-        Debug.Log("pase por delante");
-        Debug.Log("esperando click en los espacios del trellis");
+        //Debug.Log("pase por delante");
+        //Debug.Log("esperando click en los espacios del trellis");
+        this.updateText.setFlashMsg("Waiting Player Click on Trellis Space ");
         //this.is_o = true;
         //this.is_x = false;
         this.playerTurnTimer();
