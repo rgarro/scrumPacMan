@@ -101,6 +101,7 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     public void turnoDelPlayer(){
 Debug.Log("turno del jugador");
+this.updateText.setFlashMsg("Player Turn ");
 this.playerTurnTimer();
     }
 
