@@ -146,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85577217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.59, y: 4.48, z: 0}
+  m_LocalPosition: {x: -6.69, y: 4.48, z: 0}
   m_LocalScale: {x: 0.4588083, y: 0.4588083, z: 0.4588083}
   m_Children: []
   m_Father: {fileID: 2040563942}
@@ -3354,6 +3354,8 @@ MonoBehaviour:
   flashMsg: I aint afraid of no ghost..
   flashSoundClip: {fileID: 8300000, guid: 2abeb6a7a900c4920b78a229e7b0e92f, type: 3}
   playSoundOnUpdate: 1
+  soundVolume: 0.7
+  beforeNextMsgWait: 2.2
 --- !u!1 &1643834497
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,7 +3860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945382521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.59, y: 4.61, z: 0}
+  m_LocalPosition: {x: -7.52, y: 4.61, z: 0}
   m_LocalScale: {x: 0.66771, y: 0.66771, z: 0.66771}
   m_Children: []
   m_Father: {fileID: 2040563942}
