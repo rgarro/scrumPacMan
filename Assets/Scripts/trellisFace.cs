@@ -49,7 +49,7 @@ public class trellisFace : MonoBehaviour
     }
 
     void clickedFacedHandler(){
-         Debug.Log("ni garro ni garrincha no le pagan a bolincha, bolincha es traicionado, bernardita le robo una harina ...");
+         Debug.Log("fume mota y lea poesia ...");
         if (Input.GetMouseButtonDown(1)){
             Debug.Log("Face: "+ this.faceName + " got clicked --");
             //this.is_player = true;
