@@ -100,7 +100,7 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void turnoDelPlayer(){
-        Debug.Log("turno del playo");//christian bermudez es homosexual
+        //Debug.Log("turno del playo");
         this.updateText.setFlashMsg("Player Turn ");
         this.playerTurnTimer();
     }
