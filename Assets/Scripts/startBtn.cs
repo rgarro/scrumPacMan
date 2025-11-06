@@ -40,7 +40,6 @@ public class startBtn : MonoBehaviour
 
     void Start()
     {
-        //Debug.Log("starting start click handler");
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
         this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
@@ -48,10 +47,8 @@ public class startBtn : MonoBehaviour
     }
 
     public void clickHandler(){
-         //Debug.Log("start button got clicked");
         this.whoStarts();
         if(this.playerStart){
-            //Debug.Log("player starts");
             this.updateText.setFlashMsg("Player Starts");
             this.hideStartScreen();
             this.diablo.is_x = true;
@@ -61,7 +58,6 @@ public class startBtn : MonoBehaviour
             this.diablo.pasePorDelante();
         }
         if(this.computerStart){
-            //Debug.Log("computer starts");
             this.updateText.setFlashMsg("Computer Starts");
             this.diablo.is_x = false;
             this.diablo.is_o = true;
