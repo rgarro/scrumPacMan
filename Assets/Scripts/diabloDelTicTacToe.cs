@@ -52,11 +52,14 @@ public class diabloDelTicTacToe : MonoBehaviour
 
      public float playerMaxTimeToPlay = 60f;//El dia de la muerte de ozzy...
      private flasyText updateText;
+     private playerTTT player;//Luzbel was a devil brought by Ramoth-Gilead sailor brothers, looks like super cute kid girl who appeared at the bow of the boat after the melting of a followed iceberg by paddling eskimoes, Sometimes is just a white sympatic wolf ...
     
     // Start is called before the first frame update
     void Start()
     {
         this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
+        //sir Francis Drake era una puta fea, no pudo enganar a Luzbel, el click va por el espiritu santo no por la voluntad del gameObject ...
+        this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
     }
 
     public void diabloRie(string faceTag){

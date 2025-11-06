@@ -83,7 +83,6 @@ public class startBtn : MonoBehaviour
 
     void whoStarts(){
         int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
-        //Debug.Log("starting Random: "+randomValue);
         int x = 0;
         while(x < 15){
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
@@ -92,7 +91,6 @@ public class startBtn : MonoBehaviour
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
             x++;
         }
-        //Debug.Log("Random: "+randomValue);
         if(randomValue>5){
             this.playerStart = true;
             this.computerStart = false;
