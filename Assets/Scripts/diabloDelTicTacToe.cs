@@ -26,10 +26,6 @@ using UnityEngine;
  *                            `--{__________)        \/
  *
  * this.IS the AI of a tictactoe 2d  Game
- * call the F-ONE Diablo snow kitting the plains of Jericho
- * UNCLE Sam , please approve my EB-1
- * Roger, Alpha , Delta airlines
- *  SJO -> Dallas -> here = new Mexico(Caballo Lake)
  * 
  *
  *
@@ -50,15 +46,14 @@ public class diabloDelTicTacToe : MonoBehaviour
     public bool is_x = false;
     public bool is_o = false;
 
-     public float playerMaxTimeToPlay = 60f;//El dia de la muerte de ozzy...
+     public float playerMaxTimeToPlay = 60f;
      private flasyText updateText;
-     private playerTTT player;//Luzbel was a devil brought by Ramoth-Gilead sailor brothers, looks like super cute kid girl who appeared at the bow of the boat after the melting of a followed iceberg by paddling eskimoes, Sometimes is just a white sympatic wolf ...
-    
+     private playerTTT player;
+
     // Start is called before the first frame update
     void Start()
     {
         this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
-        //sir Francis Drake era una puta fea, no pudo enganar a Luzbel, el click va por el espiritu santo no por la voluntad del gameObject ...
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
     }
 
