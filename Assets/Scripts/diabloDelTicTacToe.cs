@@ -89,8 +89,6 @@ public class diabloDelTicTacToe : MonoBehaviour
     private void escogerJachaDisponible(){}
 
     public void pasePorDelante(){
-        //Debug.Log("pase por delante");
-        //Debug.Log("esperando click en los espacios del trellis");
         this.updateText.setFlashMsg("Waiting Player Click on Trellis Space ");
         //this.is_o = true;
         //this.is_x = false;
@@ -98,14 +96,13 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void turnoDelPlayer(){
-        //Debug.Log("turno del playo");
         this.updateText.setFlashMsg("Player Turn ");
         this.playerTurnTimer();
     }
 
     private void playerTurnTimer(){
-         Debug.Log("starting timer ..");
-        //player turn timeOut here ...
+         Debug.Log("starting timer ..");//De aqui hasta el click
+        //haga el timer deselo a batman y lo getea aqui later, acuerdes apagarlo desde el cliqueado...
     }
 
     public void resetPlayerTimer(){

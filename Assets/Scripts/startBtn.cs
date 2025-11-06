@@ -82,7 +82,7 @@ public class startBtn : MonoBehaviour
     void whoStarts(){
         int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
         int x = 0;
-        while(x < 15){
+        while(x < 15){//the endless woo may be with you ...
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
             randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,10.0f));
