@@ -54,13 +54,44 @@ public class restartTimeOut : MonoBehaviour
 
     public bool playSoundOnTimerOn = true;
     public float soundVolume = 0.7F;
-    public float timeOutFrom = 2.2F;//small time shot away ...
+    public int SecondsFromTimeOut = 180;//small time shot away ...
+    public string concatLegend = "seconds remaining";
 
     // Start is called before the first frame update
     void Start()
     {
-        this.servoSoundPlayer = GetComponent<AudioSource>();
+        this.soundPlayer = GetComponent<AudioSource>();
     }
+
+    private void playSoundOn(){
+        this.soundPlayer.PlayOneShot(this.timerSoundClip, this.soundVolume);
+    }
+
+     void OnGUI(){
+		this.windowRect = new Rect(this.windowX,this.windowY,this.windowHeight,this.windowWidth);		
+		GUI.Label(this.windowRect,this.timeOutStr,this.style);
+	}
+
+    public void startTimer(){
+        StartCoroutine(updateTimerString());
+    }
+
+    public void stopTimer(){
+        StopCoroutine(updateTimerString());
+    }
+
+    IEnumerator updateTimerString(){
+        int seconds = this.SecondsFromTimeOut;
+		while(true){
+            seconds = seconds - 1;
+            this.timeOutStr = seconds + " " + this.concatLegend;
+			Debug.Log("timeStr: "+this.timeOutStr);
+            if(seconds > 2){
+                //restart game here
+            }
+			yield return new WaitForSeconds (1);
+		}
+	}
 
     // Update is called once per frame
     void Update()
