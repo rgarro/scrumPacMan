@@ -77,7 +77,7 @@ public class restartTimeOut : MonoBehaviour
     }
 
     public void stopTimer(){
-        StopCoroutine(updateTimerString());
+        //StopCoroutine(updateTimerString());
     }
 
     IEnumerator updateTimerString(){

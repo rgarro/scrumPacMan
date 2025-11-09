@@ -39,29 +39,32 @@ public class trellisFace : MonoBehaviour
     //private playerTTT player;
 
     public string circleFaceName = "A1CircleFace"; 
-    public string exFaceName = "A1XFace"; 
+    public string exFaceName = "A1XFace";
+    private restartTimeOut playerTimer;
+
     // Start is called before the first frame update
     void Start()
     {
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
+        this.playerTimer = GameObject.FindWithTag("teletranClone").GetComponent<restartTimeOut>();
         this.updateLastUsed();
     }
 
     void clickedFacedHandler(){
         if (Input.GetMouseButtonDown(1)){
-            Debug.Log("Face: "+ this.faceName + " got clicked --");
+            Debug.Log("Face FH: "+ this.faceName + " got clicked --");
             //this.is_player = true;
             //this.is_diablo = false;
             this.updateLastUsed();
-            this.diablo.resetPlayerTimer();
+            this.playerTimer.stopTimer();//this.diablo.resetPlayerTimer();
             this.diablo.turnoDelDiablo();
         }
     }
 
     void OnMouseDown()
         {
-            Debug.Log("Object clicked!");
+            Debug.Log("Object OM clicked!");
             Debug.Log("Face: "+ this.faceName + " got clicked --");
             Debug.Log("Player is x: "+ this.player.is_x);
             Debug.Log("Player is o: "+ this.player.is_o);
@@ -74,6 +77,7 @@ public class trellisFace : MonoBehaviour
                 Debug.Log("FaceO: "+ this.FaceOTag);
                 this.showO();
             }
+            this.playerTimer.stopTimer();
             // Add your desired actions here
             /*
              this.is_player = true;
