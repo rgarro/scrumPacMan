@@ -49,12 +49,14 @@ public class diabloDelTicTacToe : MonoBehaviour
      public float playerMaxTimeToPlay = 60f;
      private flasyText updateText;
      private playerTTT player;
+     private restartTimeOut playerTimer;
 
     // Start is called before the first frame update
     void Start()
     {
         this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
+        this.playerTimer = GameObject.FindWithTag("teletranClone").GetComponent<restartTimeOut>();
     }
 
     public void diabloRie(string faceTag){
@@ -101,8 +103,7 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     private void playerTurnTimer(){
-         Debug.Log("starting timer ..");//De aqui hasta el click
-        //haga el timer deselo a batman y lo getea aqui later, acuerdes apagarlo desde el cliqueado...
+        this.playerTimer.startTimer();
     }
 
     public void resetPlayerTimer(){
@@ -120,19 +121,6 @@ public class diabloDelTicTacToe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (countdownTime > 0)
-        {
-            countdownTime -= Time.deltaTime;
-            int minutes = Mathf.FloorToInt(countdownTime / 60);
-            int seconds = Mathf.FloorToInt(countdownTime % 60);
-            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-        }
-        else
-        {
-            countdownTime = 0;
-            timerText.text = "00:00";
-            // Trigger an action when time is up (e.g., game over)
-        }*/
+       
     }
 }
