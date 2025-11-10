@@ -33,6 +33,7 @@ public class trellisFace : MonoBehaviour
     private float last_used = 0.0f;
     private diabloDelTicTacToe diablo;
     private playerTTT player;
+    private flasyText updateText;
     private bool is_x = false;
     private bool is_o = false;
 
@@ -48,16 +49,18 @@ public class trellisFace : MonoBehaviour
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
         this.playerTimer = GameObject.FindWithTag("teletranClone").GetComponent<restartTimeOut>();
+        this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
         this.updateLastUsed();
     }
 
     void clickedFacedHandler(){
         if (Input.GetMouseButtonDown(1)){
-            Debug.Log("Face FH: "+ this.faceName + " got clicked --");
+            //Debug.Log("Face FH: "+ this.faceName + " got clicked --");
+            this.updateText.setFlashMsg("Player Plays Corner "+this.faceName);
             //this.is_player = true;
             //this.is_diablo = false;
             this.updateLastUsed();
-            this.playerTimer.stopTimer();//this.diablo.resetPlayerTimer();
+            this.playerTimer.stopTimer();
             this.diablo.turnoDelDiablo();
         }
     }
