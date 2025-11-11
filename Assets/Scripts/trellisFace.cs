@@ -53,9 +53,9 @@ public class trellisFace : MonoBehaviour
         this.updateLastUsed();
     }
 
-    void clickedFacedHandler(){
+    void clickedFacedHandler(){//existe pero no se invoca
         if (Input.GetMouseButtonDown(1)){
-            //Debug.Log("Face FH: "+ this.faceName + " got clicked --");
+            Debug.Log("Object OB clicked!");
             this.updateText.setFlashMsg("Player Plays Corner "+this.faceName);
             //this.is_player = true;
             //this.is_diablo = false;
@@ -71,6 +71,7 @@ public class trellisFace : MonoBehaviour
             Debug.Log("Face: "+ this.faceName + " got clicked --");
             Debug.Log("Player is x: "+ this.player.is_x);
             Debug.Log("Player is o: "+ this.player.is_o);
+            this.updateText.setFlashMsg("Player Plays Corner "+this.faceName);
             this.player.pushFace(this.faceName);
             if(this.player.is_x){
                 Debug.Log("FaceX: "+ this.FaceXTag);
