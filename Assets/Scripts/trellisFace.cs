@@ -55,22 +55,12 @@ public class trellisFace : MonoBehaviour
 
     void clickedFacedHandler(){//existe pero no se invoca
         if (Input.GetMouseButtonDown(1)){
-            //Debug.Log("Object OB clicked!");
-            //this.updateText.setFlashMsg("Player Plays Corner "+this.faceName);
-            //this.is_player = true;
-            //this.is_diablo = false;
-            //this.updateLastUsed();
-            //this.playerTimer.stopTimer();
-            //this.diablo.turnoDelDiablo();
+            //Debug.Log("Object OB clicked!");//el diablo del casino de la peregrina vive en el sotano de la clorito picado ...
         }
     }
 
     void OnMouseDown()
         {
-            //Debug.Log("Object OM clicked!");
-            //Debug.Log("Face: "+ this.faceName + " got clicked --");
-            //Debug.Log("Player is x: "+ this.player.is_x);
-            //Debug.Log("Player is o: "+ this.player.is_o);
             this.updateText.setFlashMsg("Player Plays Corner "+this.faceName);
             this.player.pushFace(this.faceName);
             if(this.player.is_x){
@@ -82,23 +72,16 @@ public class trellisFace : MonoBehaviour
                 this.showO();
             }
             this.playerTimer.stopTimer();
-            // Add your desired actions here
-            /*
-             this.is_player = true;
-            this.is_diablo = false;
-            this.updateLastUsed();
-            this.diablo.resetPlayerTimer();
             this.diablo.turnoDelDiablo();
-            */
+            // Add your desired actions here
         }
 
     public void showX(){
-        Debug.Log("face tag exeption FaceX: "+ this.FaceXTag);
-        GameObject.FindWithTag(this.FaceXTag).SetActive(false);//find by name
+        GameObject.FindWithTag(this.FaceXTag).SetActive(true);//find by name Rebeka call me
     }
     
     public void showO(){
-        GameObject.FindWithTag(this.FaceOTag).SetActive(false);
+        GameObject.FindWithTag(this.FaceOTag).SetActive(true);
     }
 
     public void setDiablo(){

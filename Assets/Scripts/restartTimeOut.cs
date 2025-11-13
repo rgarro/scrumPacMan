@@ -78,8 +78,8 @@ public class restartTimeOut : MonoBehaviour
 
     public void stopTimer(){
         Debug.Log("stoping the timer ");
-        //StopCoroutine(updateTimerString());
-        //reset string here 
+        StopCoroutine(updateTimerString());
+        this.timeOutStr = "";
     }
 
     IEnumerator updateTimerString(){
@@ -87,7 +87,7 @@ public class restartTimeOut : MonoBehaviour
 		while(true){
             seconds = seconds - 1;
             this.timeOutStr = seconds + " " + this.concatLegend;
-			Debug.Log("timeStr: "+this.timeOutStr);
+			//Debug.Log("timeStr: "+this.timeOutStr);
             if(seconds > 2){
                 //restart game here
             }
