@@ -77,11 +77,14 @@ public class trellisFace : MonoBehaviour
         }
 
     public void showX(){
-        GameObject.FindWithTag(this.FaceXTag).SetActive(true);//find by name Rebeka call me
+        GameObject.FindWithTag(this.FaceXTag).SetActive(true);
     }
     
     public void showO(){
-        GameObject.FindWithTag(this.FaceOTag).SetActive(true);
+        GameObject tmp = GameObject.FindWithTag(this.FaceOTag).SetActive(true);
+        if(tmp == null){
+            Debug.Log(" FALLO el Find murio rebeka !!! FaceO: "+ this.FaceOTag);//B1CircleFace
+        }
     }
 
     public void setDiablo(){
