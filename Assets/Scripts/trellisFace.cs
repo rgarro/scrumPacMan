@@ -77,17 +77,23 @@ public class trellisFace : MonoBehaviour
         }
 
     public void showX(){
-        GameObject tmp = GameObject.FindWithTag(this.FaceXTag).SetActive(true);
-        if(tmp == null){
-            Debug.Log(" FALLO el Find !!! FaceX: "+ this.FaceXTag);//B1ExFace
-        }
+            Debug.Log("Facename: "+ this.exFaceName);
+            //GameObject.transform.Find(this.exFaceName).SetActive(true);
+            GameObject childObject = transform.Find(this.exFaceName)?.gameObject;
+            if (childObject != null)
+            {
+                childObject.SetActive(true);
+            }
     }
     
     public void showO(){
-        GameObject tmp = GameObject.FindWithTag(this.FaceOTag).SetActive(true);
-        if(tmp == null){
-            Debug.Log(" FALLO el Find !!! FaceO: "+ this.FaceOTag);//B1CircleFace
-        }
+            Debug.Log("Facename: "+ this.circleFaceName);//B1CircleFace
+            //GameObject.transform.Find(this.circleFaceName).SetActive(true);
+            GameObject childObject = transform.Find(this.circleFaceName)?.gameObject;
+            if (childObject != null)
+            {
+                childObject.SetActive(true);
+            }
     }
 
     public void setDiablo(){
