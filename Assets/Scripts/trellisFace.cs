@@ -77,13 +77,16 @@ public class trellisFace : MonoBehaviour
         }
 
     public void showX(){
-        GameObject.FindWithTag(this.FaceXTag).SetActive(true);
+        GameObject tmp = GameObject.FindWithTag(this.FaceXTag).SetActive(true);
+        if(tmp == null){
+            Debug.Log(" FALLO el Find !!! FaceX: "+ this.FaceXTag);//B1ExFace
+        }
     }
     
     public void showO(){
         GameObject tmp = GameObject.FindWithTag(this.FaceOTag).SetActive(true);
         if(tmp == null){
-            Debug.Log(" FALLO el Find murio rebeka !!! FaceO: "+ this.FaceOTag);//B1CircleFace
+            Debug.Log(" FALLO el Find !!! FaceO: "+ this.FaceOTag);//B1CircleFace
         }
     }
 
