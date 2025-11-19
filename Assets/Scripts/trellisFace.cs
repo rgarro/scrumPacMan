@@ -53,9 +53,9 @@ public class trellisFace : MonoBehaviour
         this.updateLastUsed();
     }
 
-    void clickedFacedHandler(){//existe pero no se invoca
+    void clickedFacedHandler(){//existe pero no se invoca ..
         if (Input.GetMouseButtonDown(1)){
-            //Debug.Log("Object OB clicked!");//el diablo del casino de la peregrina vive en el sotano de la clorito picado ...
+            //Debug.Log("Object OB clicked!");//
         }
     }
 
@@ -64,21 +64,17 @@ public class trellisFace : MonoBehaviour
             this.updateText.setFlashMsg("Player Plays Corner "+this.faceName);
             this.player.pushFace(this.faceName);
             if(this.player.is_x){
-                Debug.Log("FaceX: "+ this.FaceXTag);
                 this.showX();
             }
              if(this.player.is_o){
-                Debug.Log("FaceO: "+ this.FaceOTag);
                 this.showO();
             }
-            this.playerTimer.stopTimer();
+            this.playerTimer.stopTimer();//no dejes que no coma el diablo ...
             this.diablo.turnoDelDiablo();
             // Add your desired actions here
         }
 
     public void showX(){
-            Debug.Log("Facename: "+ this.exFaceName);
-            //GameObject.transform.Find(this.exFaceName).SetActive(true);
             GameObject childObject = transform.Find(this.exFaceName)?.gameObject;
             if (childObject != null)
             {
@@ -87,8 +83,6 @@ public class trellisFace : MonoBehaviour
     }
     
     public void showO(){
-            Debug.Log("Facename: "+ this.circleFaceName);//B1CircleFace
-            //GameObject.transform.Find(this.circleFaceName).SetActive(true);
             GameObject childObject = transform.Find(this.circleFaceName)?.gameObject;
             if (childObject != null)
             {
