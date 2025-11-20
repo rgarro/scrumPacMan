@@ -38,7 +38,7 @@ public class diabloDelTicTacToe : MonoBehaviour
     private trellisFace trFace;
 
     private List<string> carasDeDiablo = new List<string>(){"A1","A2","A3","B1","B2","B3","C1","C2","C3"};
-    private List<string> sonrisasDelDiablo = new List<string>(){};
+    private List<string> sonrisasDelDiablo = new List<string>(){};//las que el diablo ya jugo
     private List<string> elQueYaPaso = new List<string>(){};
     private List<string> jachasDisponibles = new List<string>(){};
     private List<string> theFourCorners = new List<string>(){"A1","A3","C1","C3"};
@@ -88,7 +88,13 @@ public class diabloDelTicTacToe : MonoBehaviour
         return this.theFourCorners[choosen_corner_key];
     }
 
-    private void escogerJachaDisponible(){}
+    private void escogerJachaDisponible(){
+        Debug.Log("escogiendo jacha disponibles ..");
+    }
+
+    private void escogerEsquinaDisponible(){
+        Debug.Log("escogiendo esquina disponibles ..");
+    }
 
     public void pasePorDelante(){
         this.updateText.setFlashMsg("Waiting Player Click on Trellis Space ");
@@ -114,6 +120,29 @@ public class diabloDelTicTacToe : MonoBehaviour
      public void turnoDelDiablo(){
          Debug.Log("turno del diablo ..");
         //player turn timeOut here ...
+        if(this.escogerEsquinaOCara()){
+            //esquina
+            this.escogerEsquinaDisponible();
+        }else{
+            //cara
+            this.escogerJachaDisponible();
+        }
+    }
+
+    //falso esquina true cara
+    private bool escogerEsquinaOCara(){
+        int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,50.0f));
+        //Beetlejuice ! ..
+        randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,50.0f));
+        //Beetlejuice ! ..
+        randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,50.0f));
+        //Beetlejuice ! ..
+        randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,50.0f));
+        if(randomValue < 25){
+            return false;
+        }else{
+            return true;
+        }
     }
 
     void evilsTurn(){}
