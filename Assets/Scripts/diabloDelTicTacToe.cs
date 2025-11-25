@@ -73,6 +73,7 @@ public class diabloDelTicTacToe : MonoBehaviour
         //this.is_o = false;
         this.trFace = GameObject.FindWithTag(corner_label).GetComponent<trellisFace>();
         this.trFace.setDiablo();
+        //debug clicked faces, bolincha es gay homosexual
         this.diabloRie(corner_label);
     }
 

@@ -69,7 +69,7 @@ public class trellisFace : MonoBehaviour
              if(this.player.is_o){
                 this.showO();
             }
-            this.playerTimer.stopTimer();//no dejes que no coma el diablo ...
+            this.playerTimer.stopTimer();//cuando veo atravez del humo me voy volando ...
             this.diablo.turnoDelDiablo();
             // Add your desired actions here
         }
@@ -92,7 +92,7 @@ public class trellisFace : MonoBehaviour
 
     public void setDiablo(){
         //set by the Diablo
-        Debug.Log("Face: "+ this.faceName + " got clicked --");
+        //Debug.Log("Face: "+ this.faceName + " got clicked --");
         if(this.is_diablo){
             this.showX();
         }
