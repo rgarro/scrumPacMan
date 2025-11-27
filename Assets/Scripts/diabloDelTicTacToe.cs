@@ -92,17 +92,20 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     private void escogerJachaDisponible(){
         Debug.Log("escogiendo jacha disponibles ..");
-        Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.toString());
-         Debug.Log("ocupadas del player .." +this.player.clickedFaces.toString());
-         //joint ocupadas despues del fume de hacerce invisible
-         this.jachasDisponibles
+        this.setJachasDisponibles(); 
     }
 
     private void escogerEsquinaDisponible(){
         Debug.Log("escogiendo esquina disponibles ..");
+        this.setJachasDisponibles(); 
     }
 
-    private void
+    private void setJachasDisponibles(){
+        Debug.Log("setting jacha disponibles ..");
+        Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.toString());
+         Debug.Log("ocupadas del player .." +this.player.clickedFaces.toString());
+         //joint ocupadas despues del fume de hacerce invisible
+         //this.jachasDisponibles, 
 
     public void pasePorDelante(){
         this.updateText.setFlashMsg("Waiting Player Click on Trellis Space ");
