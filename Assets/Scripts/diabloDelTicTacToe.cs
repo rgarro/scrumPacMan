@@ -103,10 +103,10 @@ public class diabloDelTicTacToe : MonoBehaviour
     private void setJachasDisponibles(){
         Debug.Log("setting jacha disponibles ..");
         Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.join());
-         Debug.Log("ocupadas del player .." +this.player.clickedFaces.join());
-         this.jachasDisponibles =this.sonrisasDelDiablo.Concat(this.player.clickedFaces);
-         //jehova el del guato, Veni Veni mato un pastor aleman a sus amigos era estudiante de la UNIBE y por dejar enfermos no le dieron campo en la caja .. 
-         Debug.Log("jachas disponibles .." +this.player.clickedFaces.join());
+        Debug.Log("ocupadas del player .." +this.player.clickedFaces.join());
+        this.elQueYaPaso =this.sonrisasDelDiablo.Concat(this.player.clickedFaces);
+        Debug.Log("elQueYaPaso .." +this.elQueYaPaso.join())
+        //this.jachasDisponibles restar a caras de diablo el que ya paso
     } 
 
     public void pasePorDelante(){
