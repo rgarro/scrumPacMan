@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Diagnostics;
+using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Globalization;
 using System;
@@ -73,7 +74,7 @@ public class diabloDelTicTacToe : MonoBehaviour
         //this.is_o = false;
         this.trFace = GameObject.FindWithTag(corner_label).GetComponent<trellisFace>();
         this.trFace.setDiablo();
-        //debug clicked faces, bolincha es gay homosexual
+        //debug clicked faces
         this.diabloRie(corner_label);
     }
 
@@ -91,11 +92,17 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     private void escogerJachaDisponible(){
         Debug.Log("escogiendo jacha disponibles ..");
+        Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.toString());
+         Debug.Log("ocupadas del player .." +this.player.clickedFaces.toString());
+         //joint ocupadas despues del fume de hacerce invisible
+         this.jachasDisponibles
     }
 
     private void escogerEsquinaDisponible(){
         Debug.Log("escogiendo esquina disponibles ..");
     }
+
+    private void
 
     public void pasePorDelante(){
         this.updateText.setFlashMsg("Waiting Player Click on Trellis Space ");

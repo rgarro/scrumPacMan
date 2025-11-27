@@ -24,7 +24,7 @@ public class playerTTT : MonoBehaviour
     public bool is_x = false;
     public bool is_o = false;
     //private string[] clickedFaces = {};
-    private List<string> clickedFaces = new List<string>();
+    public List<string> clickedFaces = new List<string>();
     //private string[] clickedXFaces = {};
     private List<string> clickedXFaces = new List<string>();
     //private string[] clickedOFaces = {};
