@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿//using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
 using System.Globalization;
@@ -26,7 +26,8 @@ using UnityEngine;
  *                            ,'  ,-----'   |        \
  *                            `--{__________)        \/
  *
- * this.IS the AI of a tictactoe 2d  Game
+ * this.IS the AI of a Tictactoe 2d  Game
+ * 
  * 
  *
  *
@@ -102,12 +103,12 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     private void setJachasDisponibles(){
         Debug.Log("setting jacha disponibles ..");
-        Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.join());
-        Debug.Log("ocupadas del player .." +this.player.clickedFaces.join());
+        //Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.Join());
+        //Debug.Log("ocupadas del player .." +this.player.clickedFaces.Join());
         this.elQueYaPaso =this.sonrisasDelDiablo.Concat(this.player.clickedFaces);
-        Debug.Log("elQueYaPaso .." +this.elQueYaPaso.join())
+        //Debug.Log("elQueYaPaso .." +this.elQueYaPaso.Join());
         //this.jachasDisponibles restar a caras de diablo el que ya paso
-    } 
+    }
 
     public void pasePorDelante(){
         this.updateText.setFlashMsg("Waiting Player Click on Trellis Space ");
