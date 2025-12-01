@@ -10,10 +10,15 @@ using UnityEngine;
  * |                         |
  * |       1234567890        |
  * |                         |
- * |      x GOOD BYE x       |
+ * |      x I LOVE YOU x     |
  * ---------------------------
- * Se llama oUjia , para que sea la bujia mala y yo no tenga que reparar el alternador
- * le preguntaron a la oija cuando orejas iba a culiar y salio la palabra joto
+ *  The dragon stood on the shore of the sea. 
+ * And I saw a beast coming out of the sea. 
+ * It had ten horns and seven heads, 
+ * with ten crowns on its horns, 
+ * and on each head a blasphemous name. 
+ *.      DOUTONE REBEL 13 , Slingshot B3 Slingshot B2, Cabrinha Spade , North Navigator
+ * 
  *
  *
  *
@@ -22,10 +27,14 @@ using UnityEngine;
 public class oUjia : MonoBehaviour
 {
     
-    private List<string> ATop = new List<string>(){"A1","B2","C3"};
-    private List<string> ABottom = new List<string>(){"A3","B2","C1"};
-    private List<string> ACenter = new List<string>(){"A2","B2","C2"};
-    private List<string> BMiddle = new List<string>(){"B1","B2","B3"};
+    private List<string> LineA1 = new List<string>(){"A1","B2","C3"};
+    private List<string> LineA2 = new List<string>(){"A3","B2","C1"};
+    private List<string> LineA3 = new List<string>(){"A2","B2","C2"};
+    //private List<string> LineA4 = new List<string>(){"A2","B2","C2"};
+    private List<string> LineA4 = new List<string>(){"A1","B1","C1"};
+    private List<string> LineA5 = new List<string>(){"A3","B3","C3"};
+    private List<string> LineB1 = new List<string>(){"B1","B2","B3"};
+    private List<string> LineC1 = new List<string>(){"C1","C2","C3"};
 
     // Start is called before the first frame update
     void Start()
