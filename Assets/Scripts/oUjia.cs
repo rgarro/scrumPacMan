@@ -30,9 +30,9 @@ public class oUjia : MonoBehaviour
     private List<string> LineA1 = new List<string>(){"A1","B2","C3"};
     private List<string> LineA2 = new List<string>(){"A3","B2","C1"};
     private List<string> LineA3 = new List<string>(){"A2","B2","C2"};
-    //private List<string> LineA4 = new List<string>(){"A2","B2","C2"};
     private List<string> LineA4 = new List<string>(){"A1","B1","C1"};
     private List<string> LineA5 = new List<string>(){"A3","B3","C3"};
+    private List<string> LineA6 = new List<string>(){"A1","A2","A3"};
     private List<string> LineB1 = new List<string>(){"B1","B2","B3"};
     private List<string> LineC1 = new List<string>(){"C1","C2","C3"};
 
