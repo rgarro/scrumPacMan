@@ -36,10 +36,14 @@ public class oUjia : MonoBehaviour
     private List<string> LineB1 = new List<string>(){"B1","B2","B3"};
     private List<string> LineC1 = new List<string>(){"C1","C2","C3"};
 
+    private playerTTT player;
+    private diabloDelTicTacToe diablo;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
+        this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
     }
 
     void evalGame(){
