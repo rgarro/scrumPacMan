@@ -39,6 +39,9 @@ public class oUjia : MonoBehaviour
     private playerTTT player;
     private diabloDelTicTacToe diablo;
 
+    public string diabloGano = "Fuerza de Satanas Triunfa";
+    public string playerGano = "Gol del Player";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +50,7 @@ public class oUjia : MonoBehaviour
     }
 
     void evalGame(){
-
+Debug.Log("evaluando el gane ..");
     }
 
     void playerWins(){
