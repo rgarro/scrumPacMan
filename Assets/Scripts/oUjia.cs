@@ -41,12 +41,14 @@ public class oUjia : MonoBehaviour
 
     public string diabloGano = "Fuerza de Satanas Triunfa";
     public string playerGano = "Gol del Player";
+    private flasyText updateText;
 
     // Start is called before the first frame update
     void Start()
     {
         this.diablo = GameObject.FindWithTag("teletranClone").GetComponent<diabloDelTicTacToe>();
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
+        this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
     }
 
     void evalGame(){
