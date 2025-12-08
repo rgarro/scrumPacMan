@@ -51,8 +51,11 @@ public class oUjia : MonoBehaviour
         this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
     }
 
-    void evalGame(){
+    void playerEvalGame(){
 Debug.Log("evaluando el gane ..");
+        if(this.player.clickedFaces.Count() >= 3){
+
+        }
     }
 
     void playerWins(){
