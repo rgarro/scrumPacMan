@@ -43,6 +43,15 @@ public class oUjia : MonoBehaviour
     public string playerGano = "Gol del Player";
     private flasyText updateText;
 
+    public GameObject TallyA1;
+    public GameObject TallyA2;
+    public GameObject TallyA3;
+    public GameObject TallyA4;
+    public GameObject TallyA5;
+    public GameObject TallyA6;
+    public GameObject TallyB1;
+    public GameObject TallyC1;        
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +68,7 @@ Debug.Log("evaluando el gane ..");
     }
 
     void playerWins(){
-
+this.updateText.setFlashMsg("Player Won !!");
     }
 
     void ganaElDiablo(){
