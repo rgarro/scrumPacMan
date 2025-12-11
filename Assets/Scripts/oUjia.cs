@@ -62,7 +62,7 @@ public class oUjia : MonoBehaviour
 
     void playerEvalGame(){
 Debug.Log("evaluando el gane ..");
-        if(this.player.clickedFaces.ToArray().length >= 3){
+        if(this.player.clickedFaces.Count >= 3){
 
         }
     }

@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 /**
  *                                 /(        )`
  *                                 \ \___   / |
@@ -27,9 +28,6 @@ using UnityEngine;
  *                            `--{__________)        \/
  *
  * this.IS the AI of a Tictactoe 2d  Game
- *  El diablo era un pescador de Fray Casiano , que volaba un F-ONE Diablo 
- *  a 25 millas nauticas de cabo blanco , y pescaba peces que sanaban a pacientes
- * del Monsenor Sanabria cuando les comian.
  * 
  * 
  *
