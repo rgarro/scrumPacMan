@@ -106,8 +106,8 @@ public class diabloDelTicTacToe : MonoBehaviour
         Debug.Log("setting jacha disponibles ..");
         Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.Join());
         //Debug.Log("ocupadas del player .." +this.player.clickedFaces.Join());
-        //this.elQueYaPaso =this.sonrisasDelDiablo.Concat(this.player.clickedFaces);
-        //Debug.Log("elQueYaPaso .." +this.elQueYaPaso.Join());
+        this.elQueYaPaso =this.sonrisasDelDiablo.Concat(this.player.clickedFaces).ToList();
+        Debug.Log("elQueYaPaso .." +this.elQueYaPaso.toString());
         //this.jachasDisponibles restar a caras de diablo el que ya paso
     }
 
