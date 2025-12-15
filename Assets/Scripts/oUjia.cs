@@ -64,8 +64,14 @@ public class oUjia : MonoBehaviour
     void playerEvalGame(){
 Debug.Log("evaluando el gane ..");
         if(this.player.clickedFaces.Count >= 3){
-
+            if(this.findTallyInFaces(this.player.clickedFaces)){
+                
+            }
         }
+    }
+
+    bool findTallyInFaces(List<string> clickedFaces){
+
     }
 
     void playerWins(){
