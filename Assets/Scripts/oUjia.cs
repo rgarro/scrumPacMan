@@ -62,9 +62,18 @@ public class oUjia : MonoBehaviour
     }
 
     void playerEvalGame(){
-Debug.Log("evaluando el gane ..");
+Debug.Log("oujia evaluando el gane player..");
         if(this.player.clickedFaces.Count >= 3){
             if(this.findTallyInFaces(this.player.clickedFaces)){
+                
+            }
+        }
+    }
+
+       void diabloEvalGame(){
+Debug.Log("oujia evaluando el gane diablo..");
+        if(this.diablo.sonrisasDelDiablo.Count >= 3){
+            if(this.findTallyInFaces(this.diablo.sonrisasDelDiablo)){
                 
             }
         }
