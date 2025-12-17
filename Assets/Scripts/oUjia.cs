@@ -61,22 +61,26 @@ public class oUjia : MonoBehaviour
         this.updateText = GameObject.FindWithTag("teletranClone").GetComponent<flasyText>();
     }
 
-    void playerEvalGame(){
+    public bool playerEvalGame(){
+        bool retornoSatanico = false;
 Debug.Log("oujia evaluando el gane player..");
         if(this.player.clickedFaces.Count >= 3){
             if(this.findTallyInFaces(this.player.clickedFaces)){
                 
             }
         }
+        return retornoSatanico;
     }
 
-       void diabloEvalGame(){
+       public bool diabloEvalGame(){
+        bool retornoSatanico = false;
 Debug.Log("oujia evaluando el gane diablo..");
         if(this.diablo.sonrisasDelDiablo.Count >= 3){
             if(this.findTallyInFaces(this.diablo.sonrisasDelDiablo)){
                 
             }
         }
+        return retornoSatanico;
     }
 
     bool findTallyInFaces(List<string> clickedFaces){
