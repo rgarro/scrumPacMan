@@ -84,7 +84,7 @@ Debug.Log("oujia evaluando el gane diablo..");
     }
 
     bool findTallyInFaces(List<string> clickedFaces){
-
+        return false;
     }
 
     void playerWins(){

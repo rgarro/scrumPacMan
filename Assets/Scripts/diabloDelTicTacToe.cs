@@ -41,7 +41,7 @@ public class diabloDelTicTacToe : MonoBehaviour
     private trellisFace trFace;
 
     private List<string> carasDeDiablo = new List<string>(){"A1","A2","A3","B1","B2","B3","C1","C2","C3"};
-    private List<string> sonrisasDelDiablo = new List<string>(){};//las que el diablo ya jugo
+    public List<string> sonrisasDelDiablo = new List<string>(){};//las que el diablo ya jugo
     private List<string> elQueYaPaso = new List<string>(){};
     private List<string> jachasDisponibles = new List<string>(){};
     private List<string> theFourCorners = new List<string>(){"A1","A3","C1","C3"};
@@ -104,10 +104,10 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     private void setJachasDisponibles(){
         Debug.Log("setting jacha disponibles ..");
-        Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.toString());
+        Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.ToString());
         //Debug.Log("ocupadas del player .." +this.player.clickedFaces.Join());
         this.elQueYaPaso =this.sonrisasDelDiablo.Concat(this.player.clickedFaces).ToList();
-        Debug.Log("elQueYaPaso .." +this.elQueYaPaso.toString());
+        Debug.Log("elQueYaPaso .." +this.elQueYaPaso.ToString());
         //this.jachasDisponibles restar a caras de diablo el que ya paso
     }
 
