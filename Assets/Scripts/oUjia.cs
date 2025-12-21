@@ -66,7 +66,8 @@ public class oUjia : MonoBehaviour
 Debug.Log("oujia evaluando el gane player..");
         if(this.player.clickedFaces.Count >= 3){
             if(this.findTallyInFaces(this.player.clickedFaces)){
-                
+
+               return true; 
             }
         }
         return retornoSatanico;
@@ -78,6 +79,7 @@ Debug.Log("oujia evaluando el gane diablo..");
         if(this.diablo.sonrisasDelDiablo.Count >= 3){
             if(this.findTallyInFaces(this.diablo.sonrisasDelDiablo)){
                 
+                return true;
             }
         }
         return retornoSatanico;
