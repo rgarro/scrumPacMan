@@ -18,7 +18,7 @@ using System.Linq;
  * It had ten horns and seven heads, 
  * with ten crowns on its horns, 
  * and on each head a blasphemous name. 
- *.      DOUTONE REBEL 13 , Playa Azul 14 knots ....
+ *      DOUTONE REBEL 13 , Playa Azul 14 knots North ....
  * 
  *
  *

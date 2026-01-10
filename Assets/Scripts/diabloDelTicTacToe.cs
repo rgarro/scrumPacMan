@@ -33,6 +33,8 @@ using System.Linq;
  * is like livin in a relational curve when 4 crackers got a tiny jam can divided on them
  * but what happens with the time you rode them and the circumbalating gases and front car
  * engine radiations transmutating the cookie ...
+ * connecting this to a cakePHP REST and upload it from Snowbird might produce the magic cookie
+ * since this project had an initial TDD effort
  * BE AWARE : THIS ONLY WORKS FOR THE AUTHOR UNLESS YOU HAVE PAID SOME MONEY TO HIM AND HIM is able to confirm he got the cash 
  *
  *
