@@ -4,6 +4,7 @@ Play TicTacToe against Raptor TDD AI.
 
 One players who take turns against simple TDD AI  marking the spaces in a three-by-three grid, one with Xs and the other with Os. A player wins when they mark all three spaces of a row, column, or diagonal of the grid, whereupon they traditionally draw a line through those three marks to indicate the win
 
+This proyect  will be played on an Android Car Computer ...
 
 Did you like it? send me funds,help me to pay my MIT major  ... [Paypal](https://www.paypal.me/gospelOfLuke/25).
 

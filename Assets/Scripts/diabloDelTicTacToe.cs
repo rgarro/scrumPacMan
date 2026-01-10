@@ -53,7 +53,7 @@ public class diabloDelTicTacToe : MonoBehaviour
      private flasyText updateText;
      private playerTTT player;
      private restartTimeOut playerTimer;
-     private guija oUjia;
+     private oUjia guija;
 
     // Start is called before the first frame update
     void Start()
@@ -110,7 +110,7 @@ public class diabloDelTicTacToe : MonoBehaviour
         //Debug.Log("ocupadas del player .." +this.player.clickedFaces.Join());
         this.elQueYaPaso =this.sonrisasDelDiablo.Concat(this.player.clickedFaces).ToList();
         Debug.Log("elQueYaPaso .." +this.elQueYaPaso.ToString());//verificar x del click
-        this.guija.diabloEvalGame()//ojo esta va atras
+        this.guija.diabloEvalGame();//ojo esta va atras
         //this.jachasDisponibles restar a caras de diablo el que ya paso
     }
 
