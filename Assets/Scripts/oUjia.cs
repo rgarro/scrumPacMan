@@ -62,29 +62,33 @@ public class oUjia : MonoBehaviour
     }
 
     public bool playerEvalGame(){
-        bool retornoSatanico = false;
+        bool evalLed = false;
 Debug.Log("playerEvalGame..");
 Debug.Log("clicked faces" + this.player.clickedFaces.Count)
         if(this.player.clickedFaces.Count >= 3){
-         Debug.Log("minus 3 faces");   
+         Debug.Log("grater Count");   
             if(this.findTallyInFaces(this.player.clickedFaces)){
 
                return true; 
             }
+        }else{
+            Debug.Log("lower Count");   
         }
-        return retornoSatanico;
+        return evalLed;
     }
 
        public bool diabloEvalGame(){
-        bool retornoSatanico = false;
+        bool evalLed = false;
 Debug.Log("oujia evaluando el gane diablo..");
         if(this.diablo.sonrisasDelDiablo.Count >= 3){
             if(this.findTallyInFaces(this.diablo.sonrisasDelDiablo)){
                 
                 return true;
             }
+        }else{
+            Debug.Log("lower Count");   
         }
-        return retornoSatanico;
+        return evalLed;
     }
 
     bool findTallyInFaces(List<string> clickedFaces){
