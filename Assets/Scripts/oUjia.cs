@@ -63,8 +63,10 @@ public class oUjia : MonoBehaviour
 
     public bool playerEvalGame(){
         bool retornoSatanico = false;
-Debug.Log("oujia evaluando el gane player..");
+Debug.Log("playerEvalGame..");
+Debug.Log("clicked faces" + this.player.clickedFaces.Count)
         if(this.player.clickedFaces.Count >= 3){
+         Debug.Log("minus 3 faces");   
             if(this.findTallyInFaces(this.player.clickedFaces)){
 
                return true; 
