@@ -117,7 +117,7 @@ public class diabloDelTicTacToe : MonoBehaviour
         Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.ToString());
         //Debug.Log("ocupadas del player .." +this.player.clickedFaces.Join());
         this.elQueYaPaso =this.sonrisasDelDiablo.Concat(this.player.clickedFaces).ToList();
-        Debug.Log("elQueYaPaso .." +this.elQueYaPaso.ToString());//verificar x del click
+        //Debug.Log("elQueYaPaso .." +this.elQueYaPaso.ToString());//verificar x del click
         this.guija.diabloEvalGame();//ojo esta va atras
         //this.jachasDisponibles restar a caras de diablo el que ya paso
     }
