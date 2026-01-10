@@ -30,11 +30,12 @@ using System.Linq;
  * this.IS the AI of a Tictactoe 2d  Game
  *  Put a Deviled Ham Logo sticker on your Car , put your play after corner turn
  * eat a cracker cookie you had on your ride and eat it with deviled ham at the end
- * is like livin in a relational curve when 4 crackers got a tiny jam can divided on them
+ * is like living in a relational curve when 4 crackers got a tiny jam can divided on them
  * but what happens with the time you rode them and the circumbalating gases and front car
  * engine radiations transmutating the cookie ...
- * connecting this to a cakePHP REST and upload it from Snowbird might produce the magic cookie
- * since this project had an initial TDD effort
+ * connecting this to a cakePHP REST and upload it from SnowBird might produce the magic cookie
+ * since this project had an initial TDD effort.Thanks to Helaman The Son of Helaman for giving me this pattern ... 
+ *
  * BE AWARE : THIS ONLY WORKS FOR THE AUTHOR UNLESS YOU HAVE PAID SOME MONEY TO HIM AND HIM is able to confirm he got the cash 
  *
  *
