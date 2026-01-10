@@ -18,7 +18,7 @@ using System.Linq;
  * It had ten horns and seven heads, 
  * with ten crowns on its horns, 
  * and on each head a blasphemous name. 
- *.      DOUTONE REBEL 13 , Slingshot B3 Slingshot B2, Cabrinha Spade , North Navigator
+ *.      DOUTONE REBEL 13 , Playa Azul 14 knots ....
  * 
  *
  *
@@ -40,7 +40,7 @@ public class oUjia : MonoBehaviour
     private playerTTT player;
     private diabloDelTicTacToe diablo;
 
-    public string diabloGano = "Municipal de Santana Triunfa";
+    public string diabloGano = "gol del Municipal de Santana";
     public string playerGano = "Gol del Player";
     private flasyText updateText;
 

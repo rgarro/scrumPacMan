@@ -28,8 +28,13 @@ using System.Linq;
  *                            `--{__________)        \/
  *
  * this.IS the AI of a Tictactoe 2d  Game
- * 
- * 
+ *  Put a Deviled Ham Logo sticker on your Car , put your play after corner turn
+ * eat a cracker cookie you had on your ride and eat it with deviled ham at the end
+ * is like livin in a relational curve when 4 crackers got a tiny jam can divided on them
+ * but what happens with the time you rode them and the circumbalating gases and front car
+ * engine radiations transmutating the cookie ...
+ * BE AWARE : THIS ONLY WORKS FOR THE AUTHOR UNLESS YOU HAVE PAID SOME MONEY TO HIM AND HIM is able to confirm he got the cash 
+ *
  *
  *
  *@author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
