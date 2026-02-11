@@ -28,7 +28,7 @@ using System.Linq;
 public class oUjia : MonoBehaviour
 {
     
-    private List<string> LineA1 = new List<string>(){"A1","B2","C3"};
+    private List<string> LineA1 = new List<string>(){"A1","B2","C3"};//C# type
     private List<string> LineA2 = new List<string>(){"A3","B2","C1"};
     private List<string> LineA3 = new List<string>(){"A2","B2","C2"};
     private List<string> LineA4 = new List<string>(){"A1","B1","C1"};
@@ -94,7 +94,7 @@ Debug.Log("oujia evaluando el gane diablo..");
     bool findTallyInFaces(List<string> clickedFaces){
         bool existsContains = false;//bowling tenacios D
 Debug.Log("hay tally o no?..");  
-Debug.Log("clickedfaces:"+clickedFaces);      
+Debug.Log("clickedfaces:"+clickedFaces);//busque la standar de c#      
         //bool existsContains = clickedFaces.Contains(this.LineA1);// first check if entire lis might be found or need an extra iteration
         return existsContains;
     }

@@ -20,7 +20,9 @@ using UnityEngine;
  * 
  * Staring to darkness in a blink of an eye... 
  * 
- *@author Rolando<rgarro@gmail.com>
+ *
+ *
+ *@author Rolando<rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class BatComputer : MonoBehaviour
 {
