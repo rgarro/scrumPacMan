@@ -10,7 +10,6 @@ Did you like it? send me funds,help me to pay my MIT major  ... [Paypal](https:/
 
 Bohemia-Girl Music Loop: https://soundcloud.com/dorje-trolo/bohemia-girl
 
-Will be finished in the future from El Segundo Beach ...
 
 [![herbie nichols the third world.... ](https://raw.githubusercontent.com/rgarro/scrumPacMan/main/preview.png)
 

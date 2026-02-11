@@ -92,12 +92,15 @@ Debug.Log("oujia evaluando el gane diablo..");
     }
 
     bool findTallyInFaces(List<string> clickedFaces){
-        bool existsContains = clickedFaces.Contains(this.LineA1);// first check if entire lis might be found or need an extra iteration
+        bool existsContains = false;//bowling tenacios D
+Debug.Log("hay tally o no?..");  
+Debug.Log("clickedfaces:"+clickedFaces);      
+        //bool existsContains = clickedFaces.Contains(this.LineA1);// first check if entire lis might be found or need an extra iteration
         return existsContains;
     }
 
     void playerWins(){
-this.updateText.setFlashMsg("Player Won !!");
+        this.updateText.setFlashMsg("Player Won !!");
     }
 
     void ganaElDiablo(){
