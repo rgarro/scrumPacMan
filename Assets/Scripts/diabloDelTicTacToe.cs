@@ -28,7 +28,7 @@ using System.Linq;
  *                            `--{__________)        \/
  *
  * this.IS the AI of a Tictactoe 2d  Game
- * vamos a estar en Fort Collins fumando mota y jugando este juego
+ * hold me , thrill me , kiss me , kill me
  * 
  * BE AWARE : THIS ONLY WORKS FOR THE AUTHOR UNLESS YOU HAVE PAID SOME MONEY TO HIM AND HIM is able to confirm he got the cash 
  *

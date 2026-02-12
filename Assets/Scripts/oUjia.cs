@@ -40,7 +40,7 @@ public class oUjia : MonoBehaviour
     private playerTTT player;
     private diabloDelTicTacToe diablo;
 
-    public string diabloGano = "gol del Municipal de Santana";
+    public string diabloGano = "Computer Wins";
     public string playerGano = "Gol del Player";
     private flasyText updateText;
 
