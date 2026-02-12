@@ -16,7 +16,7 @@ using UnityEngine;
  *
  *
  *
- *@author Rolando <rgarro@gmail.com>
+ *@author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
  */
 public class playerTTT : MonoBehaviour
 {
