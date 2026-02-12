@@ -94,7 +94,8 @@ Debug.Log("oujia evaluando el gane diablo..");
     bool findTallyInFaces(List<string> clickedFaces){
         bool existsContains = false;//bowling Tenacios D
 Debug.Log("hay tally o no?.."); //dinosaurs.Contains("Deinonychus")); 
-Debug.Log("clickedfaces:"+clickedFaces.Contains(this.LineA1));//busque la standar de c#      
+Debug.Log("clickedfaces:"+clickedFaces.Contains("A1"));
+//Debug.Log("clickedfaces:"+clickedFaces.Contains(this.LineA1));  
         //bool existsContains = clickedFaces.Contains(this.LineA1);// first check if entire list might be found or need an extra iteration
         return existsContains;
     }
