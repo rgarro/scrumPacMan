@@ -69,7 +69,7 @@ public class trellisFace : MonoBehaviour
              if(this.player.is_o){
                 this.showO();
             }
-            this.playerTimer.stopTimer();//cuando veo atravez del humo me voy volando ...
+            this.playerTimer.stopTimer();
             this.diablo.turnoDelDiablo();
             // Add your desired actions here
         }

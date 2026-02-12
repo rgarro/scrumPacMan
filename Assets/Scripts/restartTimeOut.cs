@@ -86,7 +86,7 @@ public class restartTimeOut : MonoBehaviour
 		while(true){
             seconds = seconds - 1;
             this.timeOutStr = seconds + " " + this.concatLegend;
-			Debug.Log("timeStr: "+this.timeOutStr);
+			//Debug.Log("timeStr: "+this.timeOutStr);
             if(seconds < 2){
                 Scene scene = SceneManager.GetActiveScene();
                 SceneManager.LoadScene(scene.name);
