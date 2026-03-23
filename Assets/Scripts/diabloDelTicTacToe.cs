@@ -146,9 +146,11 @@ public class diabloDelTicTacToe : MonoBehaviour
         //player turn timeOut here ...
         if(this.escogerEsquinaOCara()){
             //esquina
+            Debug.Log("diablo escoge esquina ..");
             this.escogerEsquinaDisponible();
         }else{
             //cara
+            Debug.Log("diablo escoge cara ..");
             this.escogerJachaDisponible();
         }
     }
