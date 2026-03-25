@@ -107,12 +107,12 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     private void setEsquinasDisponibles(){
-        //comparar lista de esquinas con la de escogidas por player y diablo , hacer lista de esquinas disponibles, escoger una por random y devolverla
+        Debug.Log("set esquinas disponibles vacio ..");
     }
 
     private void setJachasDisponibles(){
          //comparar lista de caras con la de escogidas por player y diablo , hacer lista de esquinas disponibles, escoger una por random y devolverla
-        Debug.Log("setting jacha disponibles ..");
+        Debug.Log("setting jacha disponibles HERE ..");
         //Debug.Log("ocupadas del diablo .." +this.sonrisasDelDiablo.Count);
         //this.elQueYaPaso.Add(this.player.clickedFaces[this.player.clickedFaces.Count-1]);
         //Debug.Log("elQueYaPaso .." +this.elQueYaPaso[0]);//verificar x del click
