@@ -60,7 +60,6 @@ using UnityEngine;
 	}
 
     public void setFlashMsg(string msg){
-        //Debug.Log("msg.." + msg);
         this.flashMsg = msg;
         if(this.playSoundOnUpdate){
             this.playServoSoundOn();

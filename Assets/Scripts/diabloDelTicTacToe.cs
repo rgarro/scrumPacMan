@@ -72,15 +72,11 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     public void elDiabloPrimero(){
-        //Debug.Log("el diablo primero");
         string corner_label = this.elDiabloJuegaPrimeraEsquina();
-        //Debug.Log("evil corner: "+corner_label);
         this.updateText.setFlashMsg("Computer Plays Corner "+corner_label);
-        //this.is_x = true;
-        //this.is_o = false;
         this.trFace = GameObject.FindWithTag(corner_label).GetComponent<trellisFace>();
         this.trFace.setDiablo();
-        //debug clicked faces
+        
         this.diabloRie(corner_label);
     }
 
@@ -122,8 +118,6 @@ public class diabloDelTicTacToe : MonoBehaviour
 
     public void pasePorDelante(){
         this.updateText.setFlashMsg("Waiting Player Click on Trellis Space ");
-        //this.is_o = true;
-        //this.is_x = false;
         this.playerTurnTimer();
     }
 
