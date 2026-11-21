@@ -138,6 +138,15 @@ public class diabloDelTicTacToe : MonoBehaviour
      public void turnoDelDiablo(){
          Debug.Log("turno del diablo ..");
         //player turn timeOut here ...
+        //QUE EL DIABLO ESCOJA CUALQUIERA QUE NO ESTE ESCOGIDa para terminar este juego y vengar la muerte del MeTaL
+        int caraPorEscoger = this.escogerAlgunaCara();
+        Debug.Log("cara por escoger: "+this.caraPorEscoger);
+        //verificar que la cara no este escogida ya
+        if(this.caraYaEstaEscogidaPorDiablo(caraPorEscoger) && this.caraYaEstaEscogidaPorJugador(caraPorEscoger)){
+            Debug.Log("la cara estaba escogida ..");
+            this.turnoDelDiablo();//->recursividad de Satanas
+        }
+       /*
         if(this.escogerEsquinaOCara()){
             //esquina
             Debug.Log("diablo escoge esquina ..");
@@ -147,6 +156,26 @@ public class diabloDelTicTacToe : MonoBehaviour
             Debug.Log("diablo escoge cara ..");
             this.escogerJachaDisponible();
         }
+        */
+    }
+
+    private bool caraYaEstaEscogidaPorJugador(int faceIndex){
+
+    }
+
+    private bool caraYaEstaEscogidaPorDiablo(int faceIndex){
+
+    }
+
+    private int escogerAlgunaCara(){
+        int randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,9.0f));
+        //Beetlejuice ! ..
+        randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,9.0f));
+        //Beetlejuice ! ..
+        randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,9.0f));
+        //Beetlejuice ! ..
+        randomValue = (int)Mathf.Abs(UnityEngine.Random.Range(1.0f,0.0f));
+        return randomValue;
     }
 
     //falso esquina true cara
