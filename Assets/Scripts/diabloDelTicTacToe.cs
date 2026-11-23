@@ -146,7 +146,9 @@ public class diabloDelTicTacToe : MonoBehaviour
         //verificar que la cara no este escogida ya
         if(this.caraYaEstaEscogidaPorDiablo(valorCaraPorEscoger) && this.caraYaEstaEscogidaPorJugador(valorCaraPorEscoger)){
             Debug.Log("la cara estaba escogida ..");
-            this.turnoDelDiablo();//->recursividad de Santana->
+            this.turnoDelDiablo();//->emilio jose el mario bross es homosexual
+        }else {
+            //marcar cara y pasar turno al jugador
         }
        /*
         if(this.escogerEsquinaOCara()){
@@ -161,12 +163,14 @@ public class diabloDelTicTacToe : MonoBehaviour
         */
     }
 
-    private bool caraYaEstaEscogidaPorJugador(int faceIndex){
-//verificar si valor existe en la lista
+    private bool caraYaEstaEscogidaPorJugador(string faceVal){
+        bool exists = this.player.clickedFaces.Contains(faceVal);
+        return exists;
     }
 
-    private bool caraYaEstaEscogidaPorDiablo(int faceIndex){
-//verificar si valor existe en la lista
+    private bool caraYaEstaEscogidaPorDiablo(string faceVal){
+        bool exists = this.sonrisasDelDiablo.Contains(faceVal);//los policias asesinaron a los de la banda de ladrones y dejaron vivo al jefe en Naranjo para venderlo de material humano
+        return exists;
     }
 
     private int escogerAlgunaCara(){
