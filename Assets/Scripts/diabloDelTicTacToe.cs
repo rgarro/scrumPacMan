@@ -139,12 +139,14 @@ public class diabloDelTicTacToe : MonoBehaviour
          Debug.Log("turno del diablo ..");
         //player turn timeOut here ...
         //QUE EL DIABLO ESCOJA CUALQUIERA QUE NO ESTE ESCOGIDa para terminar este juego y vengar la muerte del MeTaL
-        int caraPorEscoger = this.escogerAlgunaCara();
-        Debug.Log("cara por escoger: "+this.caraPorEscoger);
+        int caraPorEscoger = this.escogerAlgunaCara();//idex de la cara
+        string valorCaraPorEscoger = this.carasDeDiablo[caraPorEscoger];
+        Debug.Log("index cara por escoger: "+caraPorEscoger);
+        Debug.Log("valor cara por escoger: "+valorCaraPorEscoger);
         //verificar que la cara no este escogida ya
-        if(this.caraYaEstaEscogidaPorDiablo(caraPorEscoger) && this.caraYaEstaEscogidaPorJugador(caraPorEscoger)){
+        if(this.caraYaEstaEscogidaPorDiablo(valorCaraPorEscoger) && this.caraYaEstaEscogidaPorJugador(valorCaraPorEscoger)){
             Debug.Log("la cara estaba escogida ..");
-            this.turnoDelDiablo();//->recursividad de Satanas
+            this.turnoDelDiablo();//->recursividad de Santana->
         }
        /*
         if(this.escogerEsquinaOCara()){
@@ -160,11 +162,11 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     private bool caraYaEstaEscogidaPorJugador(int faceIndex){
-
+//verificar si valor existe en la lista
     }
 
     private bool caraYaEstaEscogidaPorDiablo(int faceIndex){
-
+//verificar si valor existe en la lista
     }
 
     private int escogerAlgunaCara(){
