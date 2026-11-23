@@ -12,7 +12,7 @@ This proyect  will be played on an Android Car Computer ...
 
 Did you like it? send me funds,help me to pay my MIT major  ... [Paypal](https://www.paypal.me/gospelOfLuke/25).
 
-Bohemia-Girl Music Loop: https://soundcloud.com/dorje-trolo/bohemia-girl
+Bohemia-Girl Music Loop: https://soundcloud.com/trolo-dj/bohemia-girl
 
 
 [![herbie nichols the third world.... ](https://raw.githubusercontent.com/rgarro/scrumPacMan/main/preview.png)
