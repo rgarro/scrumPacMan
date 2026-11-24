@@ -64,6 +64,7 @@ public class diabloDelTicTacToe : MonoBehaviour
         this.player = GameObject.FindWithTag("teletranClone").GetComponent<playerTTT>();
         this.playerTimer = GameObject.FindWithTag("teletranClone").GetComponent<restartTimeOut>();
         this.guija = GameObject.FindWithTag("teletranClone").GetComponent<oUjia>();
+        this.trFace = GameObject.FindWithTag("teletranClone").GetComponent<trFace>();
     }
 
     public void diabloRie(string faceTag){
@@ -149,6 +150,16 @@ public class diabloDelTicTacToe : MonoBehaviour
             this.turnoDelDiablo();//->emilio jose el mario bross es homosexual
         }else {
             //marcar cara y pasar turno al jugador
+            if(this.is_x){
+                this.trFace.exFaceName = valorCaraPorEscoger+"XFace";
+                this.trFace.showX();
+            }
+            if(this.is_o){
+                this.trFace.circleFaceName = valorCaraPorEscoger+"CircleFace";
+                this.trFace.showO();
+            }
+            this.diabloRie(valorCaraPorEscoger);
+            //continuara....turno del player...her
         }
        /*
         if(this.escogerEsquinaOCara()){
