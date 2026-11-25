@@ -159,7 +159,8 @@ public class diabloDelTicTacToe : MonoBehaviour
                 this.trFace.showO();
             }
             this.diabloRie(valorCaraPorEscoger);
-            //continuara....turno del player...her
+            //checkif winner
+            this.turnoDelPlayer()
         }
        /*
         if(this.escogerEsquinaOCara()){
