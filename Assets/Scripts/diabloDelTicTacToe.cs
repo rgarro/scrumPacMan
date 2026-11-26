@@ -145,9 +145,9 @@ public class diabloDelTicTacToe : MonoBehaviour
         Debug.Log("index cara por escoger: "+caraPorEscoger);
         Debug.Log("valor cara por escoger: "+valorCaraPorEscoger);
         //verificar que la cara no este escogida ya
-        if(this.caraYaEstaEscogidaPorDiablo(valorCaraPorEscoger) && this.caraYaEstaEscogidaPorJugador(valorCaraPorEscoger)){
+        if(this.caraYaEstaEscogidaPorDiablo(valorCaraPorEscoger) || this.caraYaEstaEscogidaPorJugador(valorCaraPorEscoger)){
             Debug.Log("la cara estaba escogida ..");
-            this.turnoDelDiablo();//->emilio jose el mario bross es homosexual
+            this.turnoDelDiablo();
         }else {
             //marcar cara y pasar turno al jugador
             if(this.is_x){
@@ -160,7 +160,7 @@ public class diabloDelTicTacToe : MonoBehaviour
             }
             this.diabloRie(valorCaraPorEscoger);
             //checkif winner
-            this.turnoDelPlayer()
+            this.turnoDelPlayer();
         }
        /*
         if(this.escogerEsquinaOCara()){
@@ -181,7 +181,7 @@ public class diabloDelTicTacToe : MonoBehaviour
     }
 
     private bool caraYaEstaEscogidaPorDiablo(string faceVal){
-        bool exists = this.sonrisasDelDiablo.Contains(faceVal);//los policias asesinaron a los de la banda de ladrones y dejaron vivo al jefe en Naranjo para venderlo de material humano
+        bool exists = this.sonrisasDelDiablo.Contains(faceVal);
         return exists;
     }
 
