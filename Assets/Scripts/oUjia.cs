@@ -114,9 +114,21 @@ Debug.Log("clickedfaces:"+clickedFaces.Contains("A1"));
 
 
     /** tallys del player **/
-    private void findTallyLineA1InPlayer(){
-    //must buble winner to the update
+    private bool findTallyLineA1InPlayer(){
+        bool result = false;
+        int timesFound = 0;
+        foreach (string face in this.LineA1)
+        {
+            if(this.player.clickedFaces.Contains(face)){
+                timesFound = timesFound + 1;
+            }
+        }
+        if(timesFound == 3){
+            result = true;
+        }
+        return result;
     }
+
 
     /**tallys del diablo**/
 private void findTallyLineA1InDiablo(){
