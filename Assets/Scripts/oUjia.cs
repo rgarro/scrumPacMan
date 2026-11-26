@@ -51,7 +51,10 @@ public class oUjia : MonoBehaviour
     public GameObject TallyA5;
     public GameObject TallyA6;
     public GameObject TallyB1;
-    public GameObject TallyC1;        
+    public GameObject TallyC1;   
+
+    private bool diabloHasWon = false;
+    private bool playerHasWon = false;     
 
     // Start is called before the first frame update
     void Start()
@@ -109,9 +112,28 @@ Debug.Log("clickedfaces:"+clickedFaces.Contains("A1"));
 
     private void tallyTHeWin(){}
 
+
+    /** tallys del player **/
+    private void findTallyLineA1InPlayer(){
+    //must buble winner to the update
+    }
+
+    /**tallys del diablo**/
+private void findTallyLineA1InDiablo(){
+//must buble winner to the update
+}
+
+    /****/
+
     // Update is called once per frame
     void Update()
     {
-        
+        //bubble winner to the update
+        if(this.diabloHasWon){
+
+        }
+        if(this.playerHasWon){
+
+        }
     }
 }

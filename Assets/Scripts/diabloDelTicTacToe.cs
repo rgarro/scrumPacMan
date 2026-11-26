@@ -160,6 +160,7 @@ public class diabloDelTicTacToe : MonoBehaviour
             }
             this.diabloRie(valorCaraPorEscoger);
             //checkif winner
+        this.guija.diabloEvalGame();//ojo esta va atras CARNAVAL 11 11 me regale mota
             this.turnoDelPlayer();
         }
        /*
